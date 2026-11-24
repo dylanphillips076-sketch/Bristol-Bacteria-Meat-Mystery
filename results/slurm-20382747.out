@@ -1,0 +1,9 @@
+cpu-bind=MASK - bp1-compute189, task  0  0 [1688961]: mask 0x100000001 set
+Alignment job started
+Clustal Omega version: 1.2.4
+Running on host bp1-compute189
+Directory is /user/home/qb23035
+Slurm job ID is 20382747
+This job ran on the following machines:
+bp1-compute189
+Ended on: Tue Nov 24 17:59:33 GMT 2026
