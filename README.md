@@ -1,27 +1,11 @@
-______      _     _        _  ___  ___           _    ___  ___          _
-| ___ \    (_)   | |      | | |  \/  |          | |   |  \/  |         | |
-| |_/ /_ __ _ ___| |_ ___ | | | .  . | ___  __ _| |_  | .  . |_   _ ___| |_ ___ _ __ _   _
-| ___ \ '__| / __| __/ _ \| | | |\/| |/ _ \/ _` | __| | |\/| | | | / __| __/ _ \ '__| | | |
-| |_/ / |  | \__ \ || (_) | | | |  | |  __/ (_| | |_  | |  | | |_| \__ \ ||  __/ |  | |_| |
-\____/|_|  |_|___/\__\___/|_| \_|  |_/\___|\__,_|\__| \_|  |_/\__, |___/\__\___|_|   \__, |
-                                                               __/ |                  __/ |
-___________________________________________________________________________________________
--------------------------------------------------------------------------------------------
+<h1 align="center">🥩 Bristol Bacteria Meat Mystery 🦠</h1>
+<p align="center"><i>Identifying the pathogen behind a simulated food-poisoning outbreak</i></p>
 
 Bioinformatic investigation of 100 bacterial DNA sequences isolated from meat
 samples at 8 food outlets (simulated outbreak exercise). This repository
 contains all code needed to reproduce the analysis in the accompanying report.
 
-
-
-
-
-
-**> Items in [square brackets] are placeholders - fill them in from your own results.
-**
 ---
-
-
 
 
 ## Repository structure
