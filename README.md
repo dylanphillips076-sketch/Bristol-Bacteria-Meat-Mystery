@@ -69,6 +69,12 @@ when `03_sequence_groups.R` is run.
    `scripts/03_sequence_groups.R` from top to bottom (missing packages are
    installed automatically).
 
+## Code adaptation 
+
+Code is largely adapted from University of Bristol, Bioinformatics (MSc) term 1 practicals. References to certain practicals will be from the 'Intro to Bioinformatics' unit. 
+
+Course code: BIOLM0052_TB-1 
+
 ---
 
 ## Step 1: Data preparation (Bash)
@@ -270,8 +276,71 @@ rm -r job_data
 - JC69 assumes equal base frequencies and equal substitution rates between all bases.
 
 ---
+## Step 4: ORF prediction and translation (Python)
 
-## Steps 4-7
+**Script:** `scripts/04_orf_prediction.py`
+**Input:** `results/representatives.fasta` (one representative per sequence group, from Step 3)
+**Output:**
+- `results/orf_candidates.csv`: the five longest ORFs per sequence
+- `results/representative_orfs_dna.fasta`: DNA of the selected ORFs
+- `results/representative_proteins.fasta`: predicted proteins (used for BLASTP)
+- `results/protein_stats.csv`: protein properties
 
-[To be added: ORF prediction and translation (Python), BLASTP and reference
-selection, protein alignment, phylogeny.]
+**Run** (from the repository root):
+```bash
+pip install biopython pandas
+python scripts/04_orf_prediction.py
+```
+
+### What it does
+1. Scans all six reading frames (three on each strand) for ORFs that start
+   with ATG and end at a stop codon, using the bacterial genetic code (table 11).
+2. Lists the five longest ORFs per sequence.
+3. Selects the longest ORF as the predicted gene and checks that it starts with
+   methionine (M), ends with a stop codon, and has a length divisible by 3.
+4. Translates the selected ORFs and saves the protein sequences.
+5. Calculates length, molecular weight, isoelectric point (pI) and GRAVY
+   (hydrophobicity) for each protein.
+
+The script adapts the longest-ORF method from the Biopython practical
+(Exercise 8.3): each reading frame is translated, the translation is split at
+stop codons, and the longest stretch is kept. Protein statistics use the code
+from Exercise 8.4.
+
+### Changes to  practical code, and why
+
+| Change | Why |
+|---|---|
+| All **six** reading frames are searched (three forward and three on the reverse complement), not only the three forward frames | The orientation of the gene in each sequence was unknown; a gene on the reverse strand would be missed by a forward-only search |
+| Each ORF is trimmed to begin at the first **methionine (ATG start codon)** | The practical kept the whole stretch between stop codons, which can include residues upstream of the true start codon that are not part of the protein |
+| Translation uses **NCBI genetic code table 11** instead of table 2 | Table 2 is the vertebrate mitochondrial code used for the practical's animal sequences; table 11 is the standard code for bacteria |
+| Sequences are trimmed to a multiple of three before translation | Prevents translation of incomplete codons at the sequence end |
+| The strand, frame, start/end coordinates and presence of a stop codon are recorded for every ORF | Allows the location and completeness of each ORF to be reported and checked |
+| The five longest ORFs per sequence are saved, and the chosen ORF is checked for a start codon, stop codon, length divisible by three, and length relative to the second-longest ORF | Provides evidence to justify the choice of ORF rather than accepting the longest automatically |
+| The repository root is located automatically | The script runs correctly whether run as a whole from the repository root or cell by cell in VS Code |
+| The script is divided into `# %%` cells | Allows step-by-step running in VS Code while remaining a standard Python script |
+
+### Results
+Each sequence contains one dominant ORF on the + strand (frame 1), covering
+92–96% of the sequence. All selected ORFs start with M, end with a stop codon
+and have a length divisible by three. Secondary ORFs were much shorter and lay
+within the main gene, on other frames or the opposite strand, consistent with
+chance ("shadow") ORFs rather than real genes. The longest ORF was therefore
+selected for each sequence.
+
+| Group | Representative from | Length (aa) | Mol. weight (kDa) | pI | GRAVY |
+|---|---|---|---|---|---|
+| 1 | outlet 02 | 1,089 | 120.8 | 4.92 | −0.464 |
+| 2 | outlet 08 | 1,154 | 129.0 | 4.91 | −0.455 |
+| 3 | outlet 05 | 1,076 | 118.9 | 4.83 | −0.335 |
+| 4 | outlet 05 | 1,073 | 118.4 | 4.83 | −0.343 |
+| 5 | outlet 01 | 1,136 | 127.5 | 4.85 | −0.427 |
+
+All five proteins are large (~118–129 kDa), acidic (pI ≈ 4.8–4.9) and
+hydrophilic (negative GRAVY), with no ambiguous residues. The group 3 and 4
+representatives have very similar properties.
+
+### Limitations
+- Only ATG start codons are considered; bacteria can also use GTG or TTG,
+  so the true start may lie further upstream.
+- Each ORF ends at the end of its sequence, so no downstream sequence is included.
