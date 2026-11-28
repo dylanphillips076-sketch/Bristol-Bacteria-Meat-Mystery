@@ -1,0 +1,501 @@
+query,rank,accession,protein,species,bit_score,e_value,percent_identity,query_cover,hit_length
+group1_outlet_02_seq053,1,WP_013582405,DNA-directed RNA polymerase subunit beta,Bifidobacterium longum,2443.3,0.0,100.0,100.0,1187
+group1_outlet_02_seq053,2,WP_003828436,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2422.5,0.0,98.82,100.0,1187
+group1_outlet_02_seq053,3,WP_214375740,DNA-directed RNA polymerase subunit beta,Bifidobacterium colobi,2408.2,0.0,98.32,100.0,1187
+group1_outlet_02_seq053,4,WP_100496801,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2406.7,0.0,98.32,100.0,1187
+group1_outlet_02_seq053,5,WP_100494508,DNA-directed RNA polymerase subunit beta,Bifidobacterium felsineum,2406.3,0.0,98.15,100.0,1187
+group1_outlet_02_seq053,6,WP_033889505,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2404.4,0.0,98.15,100.0,1187
+group1_outlet_02_seq053,7,WP_152210103,DNA-directed RNA polymerase subunit beta,Bifidobacterium cebidarum,2404.4,0.0,98.06,100.0,1187
+group1_outlet_02_seq053,8,WP_214303756,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2402.1,0.0,98.06,100.0,1187
+group1_outlet_02_seq053,9,WP_109057883,DNA-directed RNA polymerase subunit beta,Bifidobacterium callitrichidarum,2399.8,0.0,97.98,100.0,1187
+group1_outlet_02_seq053,10,WP_044090102,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2394.4,0.0,97.56,100.0,1187
+group1_outlet_02_seq053,11,WP_094666947,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2393.2,0.0,97.47,100.0,1187
+group1_outlet_02_seq053,12,WP_169171807,DNA-directed RNA polymerase subunit beta,Bifidobacterium oedipodis,2368.6,0.0,96.55,100.0,1187
+group1_outlet_02_seq053,13,WP_034525813,DNA-directed RNA polymerase subunit beta,Bifidobacterium stellenboschense,2351.6,0.0,95.7,100.0,1187
+group1_outlet_02_seq053,14,WP_101621338,DNA-directed RNA polymerase subunit beta,Bifidobacterium parmae,2351.2,0.0,95.7,100.0,1187
+group1_outlet_02_seq053,15,WP_214358103,DNA-directed RNA polymerase subunit beta,Bifidobacterium santillanense,2349.7,0.0,95.62,100.0,1187
+group1_outlet_02_seq053,16,WP_043165114,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2346.2,0.0,95.45,100.0,1187
+group1_outlet_02_seq053,17,WP_172143969,DNA-directed RNA polymerase subunit beta,Bifidobacterium panos,2303.9,0.0,93.5,99.7,1186
+group1_outlet_02_seq053,18,WP_003827094,DNA-directed RNA polymerase subunit beta,Bifidobacterium angulatum,2290.0,0.0,94.98,99.0,1188
+group1_outlet_02_seq053,19,WP_169080542,DNA-directed RNA polymerase subunit beta,Bifidobacterium erythrocebi,2289.6,0.0,94.81,99.0,1188
+group1_outlet_02_seq053,20,WP_219055321,DNA-directed RNA polymerase subunit beta,Bifidobacterium pongonis,2288.8,0.0,94.55,99.0,1188
+group1_outlet_02_seq053,21,WP_219131859,DNA-directed RNA polymerase subunit beta,Bifidobacterium saguinibicoloris,2288.1,0.0,95.28,100.0,1204
+group1_outlet_02_seq053,22,WP_033522246,DNA-directed RNA polymerase subunit beta,Bifidobacterium merycicum,2283.1,0.0,94.38,99.0,1188
+group1_outlet_02_seq053,23,WP_094636546,DNA-directed RNA polymerase subunit beta,Bifidobacterium eulemuris,2259.2,0.0,94.89,98.9,1176
+group1_outlet_02_seq053,24,WP_163197602,DNA-directed RNA polymerase subunit beta,Bifidobacterium platyrrhinorum,2257.6,0.0,95.22,98.7,1188
+group1_outlet_02_seq053,25,WP_072723606,DNA-directed RNA polymerase subunit beta,Bifidobacterium lemurum,2251.9,0.0,94.8,98.9,1176
+group1_outlet_02_seq053,26,WP_026642872,DNA-directed RNA polymerase subunit beta,Bifidobacterium tsurumiense,2250.7,0.0,91.81,99.7,1187
+group1_outlet_02_seq053,27,WP_026646816,DNA-directed RNA polymerase subunit beta,Bifidobacterium ruminantium,2235.7,0.0,92.82,99.7,1186
+group1_outlet_02_seq053,28,WP_169275659,DNA-directed RNA polymerase subunit beta,Bifidobacterium moraviense,2233.4,0.0,92.28,99.2,1180
+group1_outlet_02_seq053,29,WP_026645641,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2230.3,0.0,90.3,99.8,1186
+group1_outlet_02_seq053,30,WP_163229031,DNA-directed RNA polymerase subunit beta,Bifidobacterium aerophilum,2227.6,0.0,91.41,99.1,1176
+group1_outlet_02_seq053,31,WP_163227992,DNA-directed RNA polymerase subunit beta,Bifidobacterium choloepi,2227.6,0.0,90.72,99.8,1188
+group1_outlet_02_seq053,32,WP_099720763,DNA-directed RNA polymerase subunit beta,Bifidobacterium choerinum,2226.4,0.0,90.13,99.8,1186
+group1_outlet_02_seq053,33,WP_095613966,DNA-directed RNA polymerase subunit beta,Bifidobacterium italicum,2226.4,0.0,90.21,99.8,1186
+group1_outlet_02_seq053,34,WP_026502818,DNA-directed RNA polymerase subunit beta,Bifidobacterium boum,2226.4,0.0,90.48,99.9,1189
+group1_outlet_02_seq053,35,WP_481248495,DNA-directed RNA polymerase subunit beta,Bifidobacteriaceae,2225.7,0.0,90.3,99.9,1188
+group1_outlet_02_seq053,36,WP_152355994,DNA-directed RNA polymerase subunit beta,Bifidobacterium apri,2225.3,0.0,90.23,99.9,1189
+group1_outlet_02_seq053,37,WP_126032372,DNA-directed RNA polymerase subunit beta,Bifidobacterium castoris,2224.1,0.0,90.13,99.8,1186
+group1_outlet_02_seq053,38,WP_004218271,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2223.0,0.0,91.31,98.9,1186
+group1_outlet_02_seq053,39,WP_125979959,DNA-directed RNA polymerase subunit beta,Bifidobacterium goeldii,2223.0,0.0,90.72,99.8,1188
+group1_outlet_02_seq053,40,WP_015449988,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2223.0,0.0,90.4,99.9,1189
+group1_outlet_02_seq053,41,WP_479691714,DNA-directed RNA polymerase subunit beta,Gardnerella kenyensis,2223.0,0.0,90.6,99.5,1182
+group1_outlet_02_seq053,42,WP_464145590,DNA-directed RNA polymerase subunit beta,Bifidobacterium porcinum,2222.6,0.0,90.31,99.9,1189
+group1_outlet_02_seq053,43,WP_219057769,DNA-directed RNA polymerase subunit beta,Bifidobacterium miconis,2221.8,0.0,91.33,99.1,1176
+group1_outlet_02_seq053,44,WP_022858677,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2221.8,0.0,90.46,99.8,1186
+group1_outlet_02_seq053,45,WP_033888523,DNA-directed RNA polymerase subunit beta,Gardnerella,2221.1,0.0,90.69,99.5,1182
+group1_outlet_02_seq053,46,WP_020761981,DNA-directed RNA polymerase subunit beta,Gardnerella,2220.7,0.0,90.13,99.9,1188
+group1_outlet_02_seq053,47,WP_415687606,DNA-directed RNA polymerase subunit beta,Gardnerella,2220.3,0.0,90.6,99.5,1182
+group1_outlet_02_seq053,48,WP_051923742,DNA-directed RNA polymerase subunit beta,Bifidobacterium biavatii,2220.3,0.0,91.24,99.1,1176
+group1_outlet_02_seq053,49,WP_391496487,DNA-directed RNA polymerase subunit beta,Gardnerella,2219.9,0.0,90.69,99.5,1182
+group1_outlet_02_seq053,50,WP_032835542,DNA-directed RNA polymerase subunit beta,Gardnerella,2219.1,0.0,90.6,99.5,1182
+group1_outlet_02_seq053,51,WP_152350209,DNA-directed RNA polymerase subunit beta,Bifidobacterium avesanii,2219.1,0.0,91.51,99.2,1180
+group1_outlet_02_seq053,52,WP_217624957,DNA-directed RNA polymerase subunit beta,Bifidobacterium vespertilionis,2219.1,0.0,91.68,99.2,1180
+group1_outlet_02_seq053,53,WP_241513132,DNA-directed RNA polymerase subunit beta,Bifidobacterium amazonense,2218.7,0.0,91.16,99.1,1176
+group1_outlet_02_seq053,54,WP_064347766,DNA-directed RNA polymerase subunit beta,Gardnerella,2218.7,0.0,90.69,99.5,1182
+group1_outlet_02_seq053,55,WP_029576635,DNA-directed RNA polymerase subunit beta,Bifidobacterium thermacidophilum,2218.3,0.0,90.14,99.9,1189
+group1_outlet_02_seq053,56,WP_013399741,DNA-directed RNA polymerase subunit beta,Gardnerella vaginalis,2218.0,0.0,89.97,99.9,1188
+group1_outlet_02_seq053,57,WP_032841565,DNA-directed RNA polymerase subunit beta,Gardnerella,2217.6,0.0,90.52,99.5,1182
+group1_outlet_02_seq053,58,WP_095614212,DNA-directed RNA polymerase subunit beta,Bifidobacterium criceti,2217.2,0.0,89.79,99.8,1186
+group1_outlet_02_seq053,59,WP_060786556,DNA-directed RNA polymerase subunit beta,Gardnerella,2216.4,0.0,89.97,99.9,1188
+group1_outlet_02_seq053,60,WP_032834825,DNA-directed RNA polymerase subunit beta,Gardnerella,2216.4,0.0,90.52,99.5,1182
+group1_outlet_02_seq053,61,WP_464143624,DNA-directed RNA polymerase subunit beta,Bifidobacterium canis,2215.3,0.0,90.97,98.9,1186
+group1_outlet_02_seq053,62,WP_041777404,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2214.5,0.0,92.65,99.7,1186
+group1_outlet_02_seq053,63,WP_060785614,DNA-directed RNA polymerase subunit beta,Gardnerella,2214.5,0.0,89.97,99.9,1188
+group1_outlet_02_seq053,64,WP_152234376,DNA-directed RNA polymerase subunit beta,Bifidobacterium leontopitheci,2213.7,0.0,92.24,98.8,1188
+group1_outlet_02_seq053,65,WP_425663505,DNA-directed RNA polymerase subunit beta,Gardnerella piotii,2211.8,0.0,89.88,99.9,1188
+group1_outlet_02_seq053,66,WP_033512355,DNA-directed RNA polymerase subunit beta,Bifidobacterium mongoliense,2211.0,0.0,89.55,99.9,1189
+group1_outlet_02_seq053,67,WP_152357919,DNA-directed RNA polymerase subunit beta,Bifidobacterium ramosum,2210.3,0.0,91.11,99.5,1182
+group1_outlet_02_seq053,68,WP_214373753,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2208.3,0.0,91.24,99.1,1176
+group1_outlet_02_seq053,69,WP_039199145,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2206.0,0.0,92.74,99.7,1186
+group1_outlet_02_seq053,70,WP_169713215,DNA-directed RNA polymerase subunit beta,Bifidobacterium hapali,2204.5,0.0,91.07,99.1,1176
+group1_outlet_02_seq053,71,WP_125962787,DNA-directed RNA polymerase subunit beta,Bifidobacterium dolichotidis,2203.3,0.0,90.14,99.1,1188
+group1_outlet_02_seq053,72,WP_033524361,DNA-directed RNA polymerase subunit beta,Bifidobacterium pseudocatenulatum,2203.3,0.0,92.65,99.7,1186
+group1_outlet_02_seq053,73,WP_164520972,DNA-directed RNA polymerase subunit beta,Bifidobacterium samirii,2202.6,0.0,89.92,99.5,1182
+group1_outlet_02_seq053,74,WP_033512821,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2202.6,0.0,92.48,99.7,1186
+group1_outlet_02_seq053,75,WP_165846044,DNA-directed RNA polymerase subunit beta,Gardnerella,2202.2,0.0,90.19,99.5,1182
+group1_outlet_02_seq053,76,WP_034874850,DNA-directed RNA polymerase subunit beta,Bifidobacterium moukalabense,2198.7,0.0,92.15,99.7,1186
+group1_outlet_02_seq053,77,WP_091847923,DNA-directed RNA polymerase subunit beta,Bifidobacterium commune,2196.4,0.0,88.99,99.5,1188
+group1_outlet_02_seq053,78,WP_103042829,DNA-directed RNA polymerase subunit beta,Gardnerella,2196.0,0.0,87.84,99.9,1211
+group1_outlet_02_seq053,79,WP_421787638,DNA-directed RNA polymerase subunit beta,Gardnerella,2195.6,0.0,90.43,99.5,1182
+group1_outlet_02_seq053,80,WP_151916889,DNA-directed RNA polymerase subunit beta,Bifidobacterium jacchi,2195.2,0.0,91.3,98.8,1186
+group1_outlet_02_seq053,81,WP_012902450,DNA-directed RNA polymerase subunit beta,Bifidobacterium dentium,2195.2,0.0,91.98,99.7,1186
+group1_outlet_02_seq053,82,WP_103084696,DNA-directed RNA polymerase subunit beta,Gardnerella coleohominis,2194.5,0.0,87.76,99.9,1211
+group1_outlet_02_seq053,83,WP_033517314,DNA-directed RNA polymerase subunit beta,Bifidobacterium scardovii,2192.5,0.0,89.88,99.1,1188
+group1_outlet_02_seq053,84,WP_033514894,DNA-directed RNA polymerase subunit beta,Bifidobacterium pullorum,2191.8,0.0,89.29,99.9,1188
+group1_outlet_02_seq053,85,WP_033509970,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2185.6,0.0,91.3,98.8,1187
+group1_outlet_02_seq053,86,WP_113860741,DNA-directed RNA polymerase subunit beta,Bifidobacterium aemilianum,2185.2,0.0,88.36,99.9,1188
+group1_outlet_02_seq053,87,WP_219081632,DNA-directed RNA polymerase subunit beta,Bifidobacterium phasiani,2183.3,0.0,90.39,99.9,1188
+group1_outlet_02_seq053,88,WP_024627468,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2182.5,0.0,88.36,99.9,1188
+group1_outlet_02_seq053,89,WP_313838759,DNA-directed RNA polymerase subunit beta,Bifidobacterium kimbladii,2181.4,0.0,88.36,99.9,1188
+group1_outlet_02_seq053,90,WP_390133509,DNA-directed RNA polymerase subunit beta,Bifidobacterium apicola,2180.2,0.0,88.28,99.9,1188
+group1_outlet_02_seq053,91,WP_022859861,DNA-directed RNA polymerase subunit beta,Bifidobacterium magnum,2179.4,0.0,89.12,99.1,1186
+group1_outlet_02_seq053,92,WP_024462681,DNA-directed RNA polymerase subunit beta,Bifidobacterium subtile,2176.8,0.0,89.44,99.7,1188
+group1_outlet_02_seq053,93,WP_162000760,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2175.6,0.0,89.34,99.5,1183
+group1_outlet_02_seq053,94,WP_044087997,DNA-directed RNA polymerase subunit beta,Bifidobacterium bombi,2169.0,0.0,89.16,99.5,1188
+group1_outlet_02_seq053,95,WP_416174192,DNA-directed RNA polymerase subunit beta,Bifidobacterium crudilactis,2166.7,0.0,88.03,99.9,1188
+group1_outlet_02_seq053,96,WP_339350661,DNA-directed RNA polymerase subunit beta,Bifidobacterium indicum,2166.0,0.0,87.86,99.9,1188
+group1_outlet_02_seq053,97,WP_232345823,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2166.0,0.0,88.36,99.9,1188
+group1_outlet_02_seq053,98,WP_163200271,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2164.0,0.0,86.59,100.0,1208
+group1_outlet_02_seq053,99,WP_100510821,DNA-directed RNA polymerase subunit beta,Bifidobacterium primatium,2163.7,0.0,86.59,100.0,1208
+group1_outlet_02_seq053,100,WP_015021440,DNA-directed RNA polymerase subunit beta,Bifidobacterium,2161.7,0.0,88.11,99.9,1188
+group2_outlet_08_seq092,1,WP_003641246,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus,2473.3,0.0,100.0,100.0,1204
+group2_outlet_08_seq092,2,WP_003644088,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus,2471.8,0.0,99.92,100.0,1204
+group2_outlet_08_seq092,3,WP_033609627,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus paraplantarum,2469.5,0.0,99.83,100.0,1204
+group2_outlet_08_seq092,4,WP_050338980,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus,2447.9,0.0,98.92,100.0,1204
+group2_outlet_08_seq092,5,WP_318766831,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus carotarum,2411.3,0.0,97.01,100.0,1204
+group2_outlet_08_seq092,6,WP_170178306,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus plajomi,2403.6,0.0,96.68,100.0,1204
+group2_outlet_08_seq092,7,WP_179950276,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus garii,2402.1,0.0,96.51,100.0,1204
+group2_outlet_08_seq092,8,WP_047999171,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus herbarum,2400.9,0.0,96.59,99.8,1200
+group2_outlet_08_seq092,9,WP_171001455,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus daowaiensis,2397.1,0.0,96.51,100.0,1204
+group2_outlet_08_seq092,10,WP_057706104,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus xiangfangensis,2397.1,0.0,96.35,100.0,1204
+group2_outlet_08_seq092,11,WP_338207973,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus paraxiangfangensis,2396.3,0.0,96.35,100.0,1204
+group2_outlet_08_seq092,12,WP_082621231,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus fabifermentans,2390.9,0.0,96.35,100.0,1204
+group2_outlet_08_seq092,13,WP_308702638,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus brownii,2385.5,0.0,96.01,100.0,1204
+group2_outlet_08_seq092,14,WP_105452520,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus koreensis,2385.5,0.0,96.09,99.8,1201
+group2_outlet_08_seq092,15,WP_105450084,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus kimchii,2382.4,0.0,95.92,99.8,1201
+group2_outlet_08_seq092,16,WP_171002372,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus nangangensis,2382.4,0.0,95.93,100.0,1204
+group2_outlet_08_seq092,17,WP_171001071,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus dongliensis,2381.7,0.0,95.61,100.0,1206
+group2_outlet_08_seq092,18,WP_171000243,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus daoliensis,2380.5,0.0,95.76,100.0,1204
+group2_outlet_08_seq092,19,WP_171001596,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus songbeiensis,2380.1,0.0,95.61,100.0,1206
+group2_outlet_08_seq092,20,WP_137624869,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus pingfangensis,2333.5,0.0,95.17,99.8,1201
+group2_outlet_08_seq092,21,WP_152537314,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus sucicola,2198.7,0.0,88.47,99.3,1201
+group2_outlet_08_seq092,22,WP_057778666,DNA-directed RNA polymerase subunit beta,Paucilactobacillus vaccinostercus,2194.1,0.0,87.47,99.3,1198
+group2_outlet_08_seq092,23,WP_157047113,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus oeni,2191.0,0.0,87.72,99.4,1199
+group2_outlet_08_seq092,24,WP_057751121,DNA-directed RNA polymerase subunit beta,Pediococcus cellicola,2190.6,0.0,88.02,99.7,1205
+group2_outlet_08_seq092,25,WP_157061324,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus aquaticus,2190.2,0.0,88.13,99.3,1198
+group2_outlet_08_seq092,26,WP_412988495,DNA-directed RNA polymerase subunit beta,Pediococcus siamensis,2189.5,0.0,87.75,99.7,1203
+group2_outlet_08_seq092,27,WP_156653517,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus satsumensis,2188.7,0.0,88.15,99.5,1198
+group2_outlet_08_seq092,28,WP_157060887,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus uvarum,2186.8,0.0,88.21,99.3,1198
+group2_outlet_08_seq092,29,WP_033385639,DNA-directed RNA polymerase subunit beta,Paucilactobacillus suebicus,2183.3,0.0,87.03,99.3,1198
+group2_outlet_08_seq092,30,WP_260365539,DNA-directed RNA polymerase subunit beta,Pediococcus ethanolidurans,2182.1,0.0,87.47,99.8,1206
+group2_outlet_08_seq092,31,WP_157054794,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus capillatus,2180.2,0.0,88.56,98.0,1201
+group2_outlet_08_seq092,32,WP_164505560,DNA-directed RNA polymerase subunit beta,Levilactobacillus angrenensis,2178.7,0.0,87.53,99.9,1206
+group2_outlet_08_seq092,33,WP_056944773,DNA-directed RNA polymerase subunit beta,Levilactobacillus namurensis,2178.7,0.0,87.79,99.7,1207
+group2_outlet_08_seq092,34,WP_045808358,DNA-directed RNA polymerase subunit beta,Levilactobacillus spicheri,2178.3,0.0,87.62,99.7,1207
+group2_outlet_08_seq092,35,WP_129031376,DNA-directed RNA polymerase subunit beta,Levilactobacillus suantsaii,2178.3,0.0,87.56,99.5,1205
+group2_outlet_08_seq092,36,WP_167850138,DNA-directed RNA polymerase subunit beta,Levilactobacillus,2177.5,0.0,87.53,99.9,1206
+group2_outlet_08_seq092,37,WP_152134730,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus mali,2176.4,0.0,88.34,98.3,1198
+group2_outlet_08_seq092,38,WP_125688329,DNA-directed RNA polymerase subunit beta,Levilactobacillus fujinensis,2175.6,0.0,87.51,99.7,1204
+group2_outlet_08_seq092,39,WP_187240426,DNA-directed RNA polymerase subunit beta,Secundilactobacillus malefermentans,2175.2,0.0,87.38,99.3,1207
+group2_outlet_08_seq092,40,WP_367365927,DNA-directed RNA polymerase subunit beta,Pediococcus parvulus,2174.4,0.0,88.46,97.8,1206
+group2_outlet_08_seq092,41,WP_081919915,DNA-directed RNA polymerase subunit beta,Secundilactobacillus oryzae,2173.3,0.0,89.34,97.4,1207
+group2_outlet_08_seq092,42,WP_057804593,DNA-directed RNA polymerase subunit beta,Levilactobacillus acidifarinae,2172.9,0.0,87.33,99.7,1203
+group2_outlet_08_seq092,43,WP_065902673,DNA-directed RNA polymerase subunit beta,Secundilactobacillus paracollinoides,2172.5,0.0,87.83,99.6,1204
+group2_outlet_08_seq092,44,WP_407879313,DNA-directed RNA polymerase subunit beta,Furfurilactobacillus entadae,2172.1,0.0,87.86,99.0,1208
+group2_outlet_08_seq092,45,WP_143461822,DNA-directed RNA polymerase subunit beta,Levilactobacillus enshiensis,2172.1,0.0,87.51,99.7,1204
+group2_outlet_08_seq092,46,WP_178942153,DNA-directed RNA polymerase subunit beta,Furfurilactobacillus,2171.7,0.0,88.18,98.9,1213
+group2_outlet_08_seq092,47,WP_057733085,DNA-directed RNA polymerase subunit beta,Levilactobacillus zymae,2171.7,0.0,87.33,99.7,1203
+group2_outlet_08_seq092,48,WP_407884266,DNA-directed RNA polymerase subunit beta,Furfurilactobacillus curtus,2171.4,0.0,88.12,99.1,1205
+group2_outlet_08_seq092,49,WP_048735460,DNA-directed RNA polymerase subunit beta,Levilactobacillus koreensis,2171.0,0.0,87.51,99.7,1204
+group2_outlet_08_seq092,50,WP_268912617,DNA-directed RNA polymerase subunit beta,Lentilactobacillus terminaliae,2171.0,0.0,85.87,99.9,1198
+group2_outlet_08_seq092,51,WP_041092771,DNA-directed RNA polymerase subunit beta,Paucilactobacillus hokkaidonensis,2169.4,0.0,85.74,99.4,1202
+group2_outlet_08_seq092,52,WP_125765163,DNA-directed RNA polymerase subunit beta,Levilactobacillus mulengensis,2168.7,0.0,87.36,99.8,1204
+group2_outlet_08_seq092,53,WP_157056706,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus nagelii,2168.7,0.0,86.45,99.3,1202
+group2_outlet_08_seq092,54,WP_011668507,DNA-directed RNA polymerase subunit beta,Levilactobacillus,2168.7,0.0,87.25,99.7,1203
+group2_outlet_08_seq092,55,WP_168848728,DNA-directed RNA polymerase subunit beta,Levilactobacillus tujiorum,2167.9,0.0,87.38,99.9,1207
+group2_outlet_08_seq092,56,WP_343031796,DNA-directed RNA polymerase subunit beta,Secundilactobacillus folii,2167.5,0.0,86.95,99.9,1206
+group2_outlet_08_seq092,57,WP_155824490,DNA-directed RNA polymerase subunit beta,Ligilactobacillus saerimneri,2167.5,0.0,86.82,98.3,1194
+group2_outlet_08_seq092,58,WP_125582356,DNA-directed RNA polymerase subunit beta,Levilactobacillus cerevisiae,2166.7,0.0,87.69,99.7,1203
+group2_outlet_08_seq092,59,WP_141567387,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus vini,2166.7,0.0,86.69,99.3,1203
+group2_outlet_08_seq092,60,WP_125692388,DNA-directed RNA polymerase subunit beta,Levilactobacillus tongjiangensis,2166.0,0.0,87.51,99.7,1204
+group2_outlet_08_seq092,61,WP_204121052,DNA-directed RNA polymerase subunit beta,Levilactobacillus,2165.6,0.0,87.28,99.8,1204
+group2_outlet_08_seq092,62,WP_057151908,DNA-directed RNA polymerase subunit beta,Secundilactobacillus,2164.8,0.0,87.0,99.7,1201
+group2_outlet_08_seq092,63,WP_083488581,DNA-directed RNA polymerase subunit beta,Levilactobacillus paucivorans,2164.8,0.0,87.47,99.9,1207
+group2_outlet_08_seq092,64,WP_061776005,DNA-directed RNA polymerase subunit beta,Levilactobacillus senmaizukei,2164.8,0.0,89.17,97.4,1207
+group2_outlet_08_seq092,65,WP_125682837,DNA-directed RNA polymerase subunit beta,Levilactobacillus yonginensis,2164.4,0.0,87.43,99.7,1204
+group2_outlet_08_seq092,66,WP_017262640,DNA-directed RNA polymerase subunit beta,Furfurilactobacillus rossiae,2164.4,0.0,87.89,99.4,1210
+group2_outlet_08_seq092,67,WP_056942088,DNA-directed RNA polymerase subunit beta,Secundilactobacillus kimchicus,2164.0,0.0,86.93,99.7,1204
+group2_outlet_08_seq092,68,WP_002833322,DNA-directed RNA polymerase subunit beta,Lactobacillaceae,2163.7,0.0,86.59,99.4,1202
+group2_outlet_08_seq092,69,WP_461239969,DNA-directed RNA polymerase subunit beta,Paucilactobacillus salsurae,2163.3,0.0,86.22,99.4,1200
+group2_outlet_08_seq092,70,WP_203646226,DNA-directed RNA polymerase subunit beta,Levilactobacillus lanxiensis,2163.3,0.0,87.2,99.8,1204
+group2_outlet_08_seq092,71,WP_164510953,DNA-directed RNA polymerase subunit beta,Levilactobacillus tangyuanensis,2163.3,0.0,89.09,97.4,1207
+group2_outlet_08_seq092,72,WP_281165954,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus sicerae,2162.1,0.0,86.53,99.3,1203
+group2_outlet_08_seq092,73,WP_157047962,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus hordei,2162.1,0.0,88.48,97.3,1198
+group2_outlet_08_seq092,74,WP_125701521,DNA-directed RNA polymerase subunit beta,Levilactobacillus fuyuanensis,2161.3,0.0,87.1,99.7,1204
+group2_outlet_08_seq092,75,WP_020089833,DNA-directed RNA polymerase subunit beta,Levilactobacillus parabrevis,2161.0,0.0,87.19,99.7,1204
+group2_outlet_08_seq092,76,WP_056997443,DNA-directed RNA polymerase subunit beta,Secundilactobacillus collinoides,2160.6,0.0,88.3,97.9,1205
+group2_outlet_08_seq092,77,WP_157055609,DNA-directed RNA polymerase subunit beta,Liquorilactobacillus cacaonum,2160.6,0.0,88.05,98.0,1196
+group2_outlet_08_seq092,78,WP_057864751,DNA-directed RNA polymerase subunit beta,Lentilactobacillus diolivorans,2159.4,0.0,86.28,99.9,1208
+group2_outlet_08_seq092,79,WP_421017255,DNA-directed RNA polymerase subunit beta,Furfurilactobacillus cerevisiae,2159.4,0.0,86.82,99.7,1210
+group2_outlet_08_seq092,80,WP_290034248,DNA-directed RNA polymerase subunit beta,Ligilactobacillus cholophilus,2159.0,0.0,85.88,99.3,1203
+group2_outlet_08_seq092,81,WP_157060712,DNA-directed RNA polymerase subunit beta,Lactobacillaceae,2159.0,0.0,86.31,98.8,1199
+group2_outlet_08_seq092,82,WP_057810446,DNA-directed RNA polymerase subunit beta,Furfurilactobacillus siliginis,2158.6,0.0,88.24,98.0,1206
+group2_outlet_08_seq092,83,WP_125573710,DNA-directed RNA polymerase subunit beta,Levilactobacillus,2158.3,0.0,87.35,99.7,1204
+group2_outlet_08_seq092,84,WP_057734479,DNA-directed RNA polymerase subunit beta,Levilactobacillus hammesii,2157.9,0.0,87.02,99.7,1204
+group2_outlet_08_seq092,85,WP_125544937,DNA-directed RNA polymerase subunit beta,Levilactobacillus lindianensis,2157.9,0.0,87.35,99.7,1204
+group2_outlet_08_seq092,86,WP_002832286,DNA-directed RNA polymerase subunit beta,Pediococcus acidilactici,2157.5,0.0,86.98,99.4,1199
+group2_outlet_08_seq092,87,WP_168925862,DNA-directed RNA polymerase subunit beta,Secundilactobacillus angelensis,2157.1,0.0,87.02,99.7,1203
+group2_outlet_08_seq092,88,WP_186726317,DNA-directed RNA polymerase subunit beta,Dellaglioa carnosa,2155.9,0.0,87.68,97.8,1196
+group2_outlet_08_seq092,89,WP_216655610,DNA-directed RNA polymerase subunit beta,Lentilactobacillus kribbianus,2154.8,0.0,86.22,99.4,1193
+group2_outlet_08_seq092,90,WP_057801839,DNA-directed RNA polymerase subunit beta,Pediococcus stilesii,2154.0,0.0,86.92,99.5,1200
+group2_outlet_08_seq092,91,WP_181647393,DNA-directed RNA polymerase subunit beta,Dellaglioa algida,2154.0,0.0,87.6,97.8,1196
+group2_outlet_08_seq092,92,WP_409022013,DNA-directed RNA polymerase subunit beta,Dellaglioa kimchii,2154.0,0.0,87.6,97.8,1196
+group2_outlet_08_seq092,93,WP_162924066,DNA-directed RNA polymerase subunit beta,Apilactobacillus bombintestini,2153.6,0.0,84.76,99.7,1201
+group2_outlet_08_seq092,94,WP_003707088,DNA-directed RNA polymerase subunit beta,Ligilactobacillus,2151.7,0.0,87.73,97.4,1199
+group2_outlet_08_seq092,95,WP_054657556,DNA-directed RNA polymerase subunit beta,Apilactobacillus ozensis,2151.3,0.0,85.29,99.8,1203
+group2_outlet_08_seq092,96,WP_137601057,DNA-directed RNA polymerase subunit beta,Paucilactobacillus nenjiangensis,2151.3,0.0,87.09,97.2,1204
+group2_outlet_08_seq092,97,WP_162919793,DNA-directed RNA polymerase subunit beta,Lentilactobacillus raoultii,2150.9,0.0,85.83,99.9,1207
+group2_outlet_08_seq092,98,WP_083478639,DNA-directed RNA polymerase subunit beta,Paucilactobacillus oligofermentans,2150.6,0.0,86.96,97.4,1207
+group2_outlet_08_seq092,99,WP_147649718,DNA-directed RNA polymerase subunit beta,Lentilactobacillus senioris,2150.2,0.0,86.03,99.7,1201
+group2_outlet_08_seq092,100,WP_057799857,DNA-directed RNA polymerase subunit beta,Pediococcus argentinicus,2150.2,0.0,87.33,98.3,1202
+group3_outlet_05_seq033,1,WP_180535984,DNA-directed RNA polymerase subunit beta,Micrococcus,2375.9,0.0,99.49,100.0,1168
+group3_outlet_05_seq033,2,WP_184169854,DNA-directed RNA polymerase subunit beta,Micrococcus endophyticus,2339.3,0.0,97.6,100.0,1168
+group3_outlet_05_seq033,3,WP_248124470,DNA-directed RNA polymerase subunit beta,Micrococcus lacusdianchii,2304.6,0.0,96.15,100.0,1168
+group3_outlet_05_seq033,4,WP_135028799,DNA-directed RNA polymerase subunit beta,Micrococcus flavus,2301.9,0.0,96.15,100.0,1168
+group3_outlet_05_seq033,5,WP_224356567,DNA-directed RNA polymerase subunit beta,Micrococcus porci,2296.9,0.0,95.89,100.0,1168
+group3_outlet_05_seq033,6,WP_248116042,DNA-directed RNA polymerase subunit beta,Micrococcus,2288.5,0.0,95.8,100.0,1167
+group3_outlet_05_seq033,7,WP_067188465,DNA-directed RNA polymerase subunit beta,Micrococcus lylae,2247.6,0.0,94.18,100.0,1168
+group3_outlet_05_seq033,8,WP_184241424,DNA-directed RNA polymerase subunit beta,Micrococcus cohnii,2246.5,0.0,93.49,100.0,1168
+group3_outlet_05_seq033,9,WP_091692827,DNA-directed RNA polymerase subunit beta,Micrococcus terreus,2191.0,0.0,91.21,100.0,1172
+group3_outlet_05_seq033,10,WP_413543980,DNA-directed RNA polymerase subunit beta,Citricoccus nitrophenolicus,2177.5,0.0,90.62,100.0,1173
+group3_outlet_05_seq033,11,WP_344229902,DNA-directed RNA polymerase subunit beta,Citricoccus,2170.6,0.0,90.62,100.0,1173
+group3_outlet_05_seq033,12,WP_115931902,DNA-directed RNA polymerase subunit beta,Citricoccus muralis,2168.7,0.0,90.54,100.0,1173
+group3_outlet_05_seq033,13,WP_188806039,DNA-directed RNA polymerase subunit beta,Citricoccus zhacaiensis,2166.3,0.0,90.45,100.0,1173
+group3_outlet_05_seq033,14,WP_110110267,DNA-directed RNA polymerase subunit beta,Auritidibacter,2082.8,0.0,85.53,100.0,1171
+group3_outlet_05_seq033,15,WP_481737786,DNA-directed RNA polymerase subunit beta,Arthrobacter paludis,2072.4,0.0,86.39,100.0,1168
+group3_outlet_05_seq033,16,WP_141868494,DNA-directed RNA polymerase subunit beta,Enteractinococcus coprophilus,2049.6,0.0,84.85,100.0,1168
+group3_outlet_05_seq033,17,WP_074701266,DNA-directed RNA polymerase subunit beta,Crystallibacter crystallopoietes,2046.2,0.0,84.91,100.0,1172
+group3_outlet_05_seq033,18,WP_149955126,DNA-directed RNA polymerase subunit beta,Zafaria cholistanensis,2046.2,0.0,85.87,100.0,1168
+group3_outlet_05_seq033,19,WP_264668657,DNA-directed RNA polymerase subunit beta,Crystallibacter permensis,2043.8,0.0,84.65,100.0,1172
+group3_outlet_05_seq033,20,WP_310171459,DNA-directed RNA polymerase subunit beta,Enteractinococcus fodinae,2043.5,0.0,84.33,100.0,1168
+group3_outlet_05_seq033,21,WP_435728609,DNA-directed RNA polymerase subunit beta,Arthrobacter,2042.7,0.0,84.93,100.0,1168
+group3_outlet_05_seq033,22,WP_343900035,DNA-directed RNA polymerase subunit beta,Arthrobacter rhombi,2042.7,0.0,84.93,100.0,1168
+group3_outlet_05_seq033,23,WP_043058945,DNA-directed RNA polymerase subunit beta,Enteractinococcus helveticum,2041.2,0.0,84.85,100.0,1168
+group3_outlet_05_seq033,24,WP_345148910,DNA-directed RNA polymerase subunit beta,Arthrobacter ginkgonis,2040.8,0.0,85.62,100.0,1168
+group3_outlet_05_seq033,25,WP_425574494,DNA-directed RNA polymerase subunit beta,Nesterenkonia aethiopica,2040.0,0.0,84.67,100.0,1167
+group3_outlet_05_seq033,26,WP_373971219,DNA-directed RNA polymerase subunit beta,Arthrobacter halodurans,2037.7,0.0,85.19,100.0,1168
+group3_outlet_05_seq033,27,WP_127511042,DNA-directed RNA polymerase subunit beta,Arthrobacter sulfonylureivorans,2036.9,0.0,84.83,100.0,1172
+group3_outlet_05_seq033,28,WP_227903889,DNA-directed RNA polymerase subunit beta,Arthrobacter,2035.0,0.0,84.85,100.0,1166
+group3_outlet_05_seq033,29,WP_191807510,DNA-directed RNA polymerase subunit beta,Arthrobacter gallicola,2033.8,0.0,84.85,100.0,1166
+group3_outlet_05_seq033,30,WP_460690062,DNA-directed RNA polymerase subunit beta,Nesterenkonia suensis,2032.7,0.0,84.25,100.0,1167
+group3_outlet_05_seq033,31,WP_121483722,DNA-directed RNA polymerase subunit beta,Galactobacter caseinivorans,2032.3,0.0,84.59,100.0,1168
+group3_outlet_05_seq033,32,WP_344719543,DNA-directed RNA polymerase subunit beta,Nesterenkonia halobia,2031.1,0.0,83.65,100.0,1168
+group3_outlet_05_seq033,33,WP_152271502,DNA-directed RNA polymerase subunit beta,Arthrobacter yangruifuii,2028.5,0.0,84.42,100.0,1166
+group3_outlet_05_seq033,34,WP_153142841,DNA-directed RNA polymerase subunit beta,Nesterenkonia halophila,2028.5,0.0,83.48,100.0,1168
+group3_outlet_05_seq033,35,WP_179540899,DNA-directed RNA polymerase subunit beta,Nesterenkonia xinjiangensis,2028.5,0.0,84.16,100.0,1167
+group3_outlet_05_seq033,36,WP_066296002,DNA-directed RNA polymerase subunit beta,Arthrobacter luteolus,2027.3,0.0,84.5,100.0,1166
+group3_outlet_05_seq033,37,WP_227894259,DNA-directed RNA polymerase subunit beta,Arthrobacter,2027.3,0.0,84.59,100.0,1166
+group3_outlet_05_seq033,38,WP_191746904,DNA-directed RNA polymerase subunit beta,Arthrobacter pullicola,2026.9,0.0,84.59,100.0,1166
+group3_outlet_05_seq033,39,WP_255796982,DNA-directed RNA polymerase subunit beta,Arthrobacter,2026.5,0.0,84.42,100.0,1166
+group3_outlet_05_seq033,40,WP_374761151,DNA-directed RNA polymerase subunit beta,Nesterenkonia flava,2025.0,0.0,83.89,100.0,1172
+group3_outlet_05_seq033,41,WP_159617669,DNA-directed RNA polymerase subunit beta,Arthrobacter zhaoguopingii,2024.6,0.0,84.35,100.0,1169
+group3_outlet_05_seq033,42,WP_091602607,DNA-directed RNA polymerase subunit beta,Arthrobacter,2024.2,0.0,84.59,100.0,1166
+group3_outlet_05_seq033,43,WP_152226448,DNA-directed RNA polymerase subunit beta,Arthrobacter,2024.2,0.0,84.59,100.0,1166
+group3_outlet_05_seq033,44,WP_183665891,DNA-directed RNA polymerase subunit beta,Neomicrococcus aestuarii,2023.8,0.0,84.69,100.0,1168
+group3_outlet_05_seq033,45,WP_133403930,DNA-directed RNA polymerase subunit beta,Arthrobacter crusticola,2023.8,0.0,84.26,100.0,1169
+group3_outlet_05_seq033,46,WP_255790539,DNA-directed RNA polymerase subunit beta,Arthrobacter zhaoxinii,2023.4,0.0,84.25,100.0,1166
+group3_outlet_05_seq033,47,WP_183509331,DNA-directed RNA polymerase subunit beta,Paeniglutamicibacter cryotolerans,2023.0,0.0,84.08,100.0,1168
+group3_outlet_05_seq033,48,WP_183644323,DNA-directed RNA polymerase subunit beta,Neomicrococcus lactis,2022.3,0.0,84.33,100.0,1168
+group3_outlet_05_seq033,49,WP_026545670,DNA-directed RNA polymerase subunit beta,Arthrobacter,2021.9,0.0,84.17,100.0,1169
+group3_outlet_05_seq033,50,WP_210047384,DNA-directed RNA polymerase subunit beta,Nesterenkonia lacusekhoensis,2021.9,0.0,83.39,100.0,1167
+group3_outlet_05_seq033,51,WP_344880643,DNA-directed RNA polymerase subunit beta,Zhihengliuella alba,2021.5,0.0,84.08,100.0,1168
+group3_outlet_05_seq033,52,WP_152219797,DNA-directed RNA polymerase subunit beta,Arthrobacter citreus,2020.4,0.0,84.25,100.0,1166
+group3_outlet_05_seq033,53,WP_217389413,DNA-directed RNA polymerase subunit beta,Paeniglutamicibacter quisquiliarum,2020.0,0.0,84.59,100.0,1168
+group3_outlet_05_seq033,54,WP_227906665,DNA-directed RNA polymerase subunit beta,Arthrobacter gengyunqii,2018.8,0.0,84.16,100.0,1166
+group3_outlet_05_seq033,55,WP_264270826,DNA-directed RNA polymerase subunit beta,Paeniglutamicibacter,2018.4,0.0,84.67,100.0,1168
+group3_outlet_05_seq033,56,WP_055768045,DNA-directed RNA polymerase subunit beta,Arthrobacter,2018.4,0.0,84.0,100.0,1169
+group3_outlet_05_seq033,57,WP_105032930,DNA-directed RNA polymerase subunit beta,Arthrobacter,2018.4,0.0,84.17,100.0,1169
+group3_outlet_05_seq033,58,WP_209998483,DNA-directed RNA polymerase subunit beta,Paeniglutamicibacter kerguelensis,2018.4,0.0,84.16,100.0,1168
+group3_outlet_05_seq033,59,WP_168151210,DNA-directed RNA polymerase subunit beta,Paeniglutamicibacter terrestris,2017.3,0.0,84.33,100.0,1168
+group3_outlet_05_seq033,60,WP_119423450,DNA-directed RNA polymerase subunit beta,Galactobacter valiniphilus,2016.9,0.0,84.25,100.0,1168
+group3_outlet_05_seq033,61,WP_104179317,DNA-directed RNA polymerase subunit beta,Arthrobacter,2016.9,0.0,83.92,100.0,1169
+group3_outlet_05_seq033,62,WP_056543988,DNA-directed RNA polymerase subunit beta,Arthrobacter,2016.1,0.0,83.75,100.0,1169
+group3_outlet_05_seq033,63,WP_196836569,DNA-directed RNA polymerase subunit beta,Zhihengliuella flava,2016.1,0.0,84.93,100.0,1168
+group3_outlet_05_seq033,64,WP_204531744,DNA-directed RNA polymerase subunit beta,Arthrobacter tumbae,2014.6,0.0,83.75,100.0,1169
+group3_outlet_05_seq033,65,WP_029629549,DNA-directed RNA polymerase subunit beta,Yaniella halotolerans,2014.2,0.0,83.05,100.0,1168
+group3_outlet_05_seq033,66,WP_209907096,DNA-directed RNA polymerase subunit beta,Paeniglutamicibacter psychrophenolicus,2014.2,0.0,84.33,100.0,1168
+group3_outlet_05_seq033,67,WP_301226152,DNA-directed RNA polymerase subunit beta,Arthrobacter,2013.8,0.0,84.0,100.0,1169
+group3_outlet_05_seq033,68,WP_102159520,DNA-directed RNA polymerase subunit beta,Zhihengliuella halotolerans,2013.8,0.0,85.19,100.0,1168
+group3_outlet_05_seq033,69,WP_007271018,DNA-directed RNA polymerase subunit beta,Paeniglutamicibacter gangotriensis,2013.8,0.0,84.25,100.0,1168
+group3_outlet_05_seq033,70,WP_136454008,DNA-directed RNA polymerase subunit beta,Arthrobacter echini,2013.0,0.0,83.83,100.0,1169
+group3_outlet_05_seq033,71,WP_167994197,DNA-directed RNA polymerase subunit beta,Arthrobacter pigmenti,2013.0,0.0,83.66,100.0,1169
+group3_outlet_05_seq033,72,WP_459326850,DNA-directed RNA polymerase subunit beta,Arthrobacter tecti,2012.7,0.0,83.66,100.0,1169
+group3_outlet_05_seq033,73,WP_120147089,DNA-directed RNA polymerase subunit beta,Arthrobacter,2012.7,0.0,83.75,100.0,1169
+group3_outlet_05_seq033,74,WP_104121374,DNA-directed RNA polymerase subunit beta,Arthrobacter pityocampae,2011.1,0.0,83.83,100.0,1169
+group3_outlet_05_seq033,75,WP_247826917,DNA-directed RNA polymerase subunit beta,Arthrobacter antioxidans,2011.1,0.0,83.92,100.0,1169
+group3_outlet_05_seq033,76,WP_343956710,DNA-directed RNA polymerase subunit beta,Yaniella,2008.8,0.0,84.25,100.0,1168
+group3_outlet_05_seq033,77,WP_070490817,DNA-directed RNA polymerase subunit beta,Micrococcaceae,2006.9,0.0,83.22,100.0,1168
+group3_outlet_05_seq033,78,WP_138177167,DNA-directed RNA polymerase subunit beta,Glutamicibacter,2005.0,0.0,83.39,100.0,1168
+group3_outlet_05_seq033,79,WP_210100113,DNA-directed RNA polymerase subunit beta,Paeniglutamicibacter antarcticus,2005.0,0.0,84.16,100.0,1168
+group3_outlet_05_seq033,80,WP_053799447,DNA-directed RNA polymerase subunit beta,Micrococcaceae,2004.6,0.0,82.71,100.0,1168
+group3_outlet_05_seq033,81,WP_345476387,DNA-directed RNA polymerase subunit beta,Nesterenkonia rhizosphaerae,2002.2,0.0,82.98,100.0,1174
+group3_outlet_05_seq033,82,WP_334230274,DNA-directed RNA polymerase subunit beta,Tersicoccus mangrovi,2001.1,0.0,83.65,100.0,1163
+group3_outlet_05_seq033,83,WP_204880192,DNA-directed RNA polymerase subunit beta,Pseudoglutamicibacter cumminsii,2001.1,0.0,83.22,100.0,1168
+group3_outlet_05_seq033,84,WP_309406188,DNA-directed RNA polymerase subunit beta,Glutamicibacter,2000.7,0.0,82.53,100.0,1168
+group3_outlet_05_seq033,85,WP_188948930,DNA-directed RNA polymerase subunit beta,Glutamicibacter protophormiae,2000.7,0.0,82.36,100.0,1168
+group3_outlet_05_seq033,86,WP_028463777,DNA-directed RNA polymerase subunit beta,Nesterenkonia alba,1999.6,0.0,82.47,100.0,1174
+group3_outlet_05_seq033,87,WP_192594264,DNA-directed RNA polymerase subunit beta,Nesterenkonia lutea,1999.2,0.0,82.68,100.0,1172
+group3_outlet_05_seq033,88,WP_192592263,DNA-directed RNA polymerase subunit beta,Nesterenkonia halotolerans,1998.4,0.0,82.68,100.0,1172
+group3_outlet_05_seq033,89,WP_138414243,DNA-directed RNA polymerase subunit beta,Sinomonas gamaensis,1997.6,0.0,82.98,100.0,1166
+group3_outlet_05_seq033,90,WP_058266501,DNA-directed RNA polymerase subunit beta,Pseudarthrobacter enclensis,1997.2,0.0,82.72,100.0,1169
+group3_outlet_05_seq033,91,WP_036473236,DNA-directed RNA polymerase subunit beta,Nesterenkonia,1996.9,0.0,82.42,100.0,1172
+group3_outlet_05_seq033,92,WP_179440955,DNA-directed RNA polymerase subunit beta,Nesterenkonia sandarakina,1996.9,0.0,82.42,100.0,1172
+group3_outlet_05_seq033,93,WP_076703997,DNA-directed RNA polymerase subunit beta,Tersicoccus phoenicis,1996.5,0.0,83.65,100.0,1163
+group3_outlet_05_seq033,94,WP_133345782,DNA-directed RNA polymerase subunit beta,Arthrobacter,1996.5,0.0,82.63,100.0,1169
+group3_outlet_05_seq033,95,WP_147103097,DNA-directed RNA polymerase subunit beta,Nesterenkonia populi,1995.3,0.0,82.47,100.0,1174
+group3_outlet_05_seq033,96,WP_142133082,DNA-directed RNA polymerase subunit beta,Arthrobacter,1995.3,0.0,82.81,100.0,1169
+group3_outlet_05_seq033,97,WP_015937859,DNA-directed RNA polymerase subunit beta,Pseudarthrobacter chlorophenolicus,1994.9,0.0,82.81,100.0,1169
+group3_outlet_05_seq033,98,WP_175316311,DNA-directed RNA polymerase subunit beta,Pseudarthrobacter,1994.9,0.0,82.81,100.0,1169
+group3_outlet_05_seq033,99,WP_141159759,DNA-directed RNA polymerase subunit beta,Pseudarthrobacter,1994.5,0.0,82.81,100.0,1169
+group3_outlet_05_seq033,100,WP_343879636,DNA-directed RNA polymerase subunit beta,Arthrobacter flavus,1994.5,0.0,83.23,100.0,1169
+group4_outlet_05_seq074,1,WP_096163301,DNA-directed RNA polymerase subunit beta,Brachybacterium,2361.6,0.0,100.0,100.0,1162
+group4_outlet_05_seq074,2,WP_096798595,DNA-directed RNA polymerase subunit beta,Brachybacterium ginsengisoli,2266.1,0.0,95.09,100.0,1162
+group4_outlet_05_seq074,3,WP_193116781,DNA-directed RNA polymerase subunit beta,Brachybacterium tyrofermentans,2264.2,0.0,95.18,100.0,1162
+group4_outlet_05_seq074,4,WP_209889243,DNA-directed RNA polymerase subunit beta,Brachybacterium fresconis,2256.5,0.0,94.92,100.0,1162
+group4_outlet_05_seq074,5,WP_209903807,DNA-directed RNA polymerase subunit beta,Brachybacterium sacelli,2255.7,0.0,95.01,100.0,1162
+group4_outlet_05_seq074,6,WP_089064432,DNA-directed RNA polymerase subunit beta,Brachybacterium avium,2252.6,0.0,94.15,100.0,1162
+group4_outlet_05_seq074,7,WP_115413553,DNA-directed RNA polymerase subunit beta,Brachybacterium saurashtrense,2233.8,0.0,94.66,100.0,1162
+group4_outlet_05_seq074,8,WP_126986352,DNA-directed RNA polymerase subunit beta,Brachybacterium,2225.7,0.0,94.41,100.0,1162
+group4_outlet_05_seq074,9,WP_087484108,DNA-directed RNA polymerase subunit beta,Brachybacterium massiliense,2225.3,0.0,94.32,100.0,1162
+group4_outlet_05_seq074,10,WP_096802401,DNA-directed RNA polymerase subunit beta,Brachybacterium vulturis,2222.6,0.0,93.98,100.0,1162
+group4_outlet_05_seq074,11,WP_464136632,DNA-directed RNA polymerase subunit beta,Brachybacterium zhongshanense,2216.4,0.0,93.37,100.0,1162
+group4_outlet_05_seq074,12,WP_204410274,DNA-directed RNA polymerase subunit beta,Brachybacterium muris,2210.3,0.0,93.63,100.0,1162
+group4_outlet_05_seq074,13,WP_193864421,DNA-directed RNA polymerase subunit beta,Brachybacterium,2195.6,0.0,92.94,100.0,1162
+group4_outlet_05_seq074,14,WP_010532541,DNA-directed RNA polymerase subunit beta,Brachybacterium squillarum,2195.2,0.0,92.86,100.0,1161
+group4_outlet_05_seq074,15,WP_137770114,DNA-directed RNA polymerase subunit beta,Brachybacterium,2192.2,0.0,92.86,100.0,1162
+group4_outlet_05_seq074,16,WP_264451190,DNA-directed RNA polymerase subunit beta,Brachybacterium,2190.2,0.0,92.86,100.0,1162
+group4_outlet_05_seq074,17,WP_249736934,DNA-directed RNA polymerase subunit beta,Brachybacterium equifaecis,2167.5,0.0,90.71,100.0,1162
+group4_outlet_05_seq074,18,WP_228357664,DNA-directed RNA polymerase subunit beta,Brachybacterium halotolerans,2166.3,0.0,90.62,100.0,1162
+group4_outlet_05_seq074,19,WP_038371312,DNA-directed RNA polymerase subunit beta,Brachybacterium phenoliresistens,2165.6,0.0,90.71,100.0,1162
+group4_outlet_05_seq074,20,WP_152351768,DNA-directed RNA polymerase subunit beta,Brachybacterium subflavum,2163.3,0.0,90.62,100.0,1162
+group4_outlet_05_seq074,21,WP_249478955,DNA-directed RNA polymerase subunit beta,Brachybacterium kimchii,2159.8,0.0,90.53,100.0,1162
+group4_outlet_05_seq074,22,WP_106507400,DNA-directed RNA polymerase subunit beta,Brachybacterium timonense,2154.8,0.0,90.88,100.0,1162
+group4_outlet_05_seq074,23,WP_109274665,DNA-directed RNA polymerase subunit beta,Brachybacterium endophyticum,2147.5,0.0,90.71,100.0,1162
+group4_outlet_05_seq074,24,WP_263594217,DNA-directed RNA polymerase subunit beta,Brachybacterium huguangmaarense,2137.5,0.0,90.71,100.0,1161
+group4_outlet_05_seq074,25,WP_259557516,DNA-directed RNA polymerase subunit beta,Brachybacterium sillae,2136.3,0.0,90.45,100.0,1162
+group4_outlet_05_seq074,26,WP_087105230,DNA-directed RNA polymerase subunit beta,Brachybacterium nesterenkovii,2122.1,0.0,90.53,100.0,1159
+group4_outlet_05_seq074,27,WP_058235310,DNA-directed RNA polymerase subunit beta,Devriesea agamarum,2095.9,0.0,88.04,100.0,1159
+group4_outlet_05_seq074,28,WP_065247378,DNA-directed RNA polymerase subunit beta,Dermabacter vaginalis,2080.4,0.0,87.69,100.0,1161
+group4_outlet_05_seq074,29,WP_016664011,DNA-directed RNA polymerase subunit beta,Dermabacter,2078.9,0.0,87.52,100.0,1161
+group4_outlet_05_seq074,30,WP_034372215,DNA-directed RNA polymerase subunit beta,Dermabacter,2077.8,0.0,87.44,100.0,1161
+group4_outlet_05_seq074,31,WP_183375657,DNA-directed RNA polymerase subunit beta,Helcobacillus,2074.3,0.0,87.78,100.0,1162
+group4_outlet_05_seq074,32,WP_156198170,DNA-directed RNA polymerase subunit beta,Actinotalea caeni,1867.0,0.0,78.34,100.0,1165
+group4_outlet_05_seq074,33,WP_152230074,DNA-directed RNA polymerase subunit beta,Georgenia ruanii,1859.7,0.0,77.3,100.0,1169
+group4_outlet_05_seq074,34,WP_156252105,DNA-directed RNA polymerase subunit beta,Pseudactinotalea terrae,1857.8,0.0,77.98,100.0,1164
+group4_outlet_05_seq074,35,WP_139071850,DNA-directed RNA polymerase subunit beta,Georgenia,1857.0,0.0,77.66,99.1,1171
+group4_outlet_05_seq074,36,WP_152203510,DNA-directed RNA polymerase subunit beta,Georgenia thermotolerans,1855.9,0.0,77.3,100.0,1169
+group4_outlet_05_seq074,37,WP_382396135,DNA-directed RNA polymerase subunit beta,Georgenia alba,1855.1,0.0,77.71,99.1,1169
+group4_outlet_05_seq074,38,WP_022917242,DNA-directed RNA polymerase subunit beta,Ruania albidiflava,1854.7,0.0,77.79,100.0,1172
+group4_outlet_05_seq074,39,WP_193496688,DNA-directed RNA polymerase subunit beta,Ruania alkalisoli,1853.2,0.0,77.28,100.0,1172
+group4_outlet_05_seq074,40,WP_388001959,DNA-directed RNA polymerase subunit beta,Georgenia deserti,1853.2,0.0,77.8,99.1,1169
+group4_outlet_05_seq074,41,WP_461023038,DNA-directed RNA polymerase subunit beta,Thalassiella azotivora,1851.6,0.0,77.21,100.0,1163
+group4_outlet_05_seq074,42,WP_345039405,DNA-directed RNA polymerase subunit beta,Georgenia daeguensis,1851.6,0.0,77.88,99.1,1169
+group4_outlet_05_seq074,43,WP_098484325,DNA-directed RNA polymerase subunit beta,Georgenia soli,1849.7,0.0,78.06,99.1,1169
+group4_outlet_05_seq074,44,WP_156224016,DNA-directed RNA polymerase subunit beta,Pseudactinotalea suaedae,1849.7,0.0,77.48,100.0,1165
+group4_outlet_05_seq074,45,WP_149204200,DNA-directed RNA polymerase subunit beta,Actinotalea subterranea,1848.6,0.0,77.2,100.0,1168
+group4_outlet_05_seq074,46,WP_152187598,DNA-directed RNA polymerase subunit beta,Georgenia satyanarayanai,1846.6,0.0,77.06,99.1,1171
+group4_outlet_05_seq074,47,WP_154792905,DNA-directed RNA polymerase subunit beta,Occultella kanbiaonis,1846.6,0.0,77.36,100.0,1172
+group4_outlet_05_seq074,48,WP_156740981,DNA-directed RNA polymerase subunit beta,Occultella aeris,1846.2,0.0,77.36,100.0,1172
+group4_outlet_05_seq074,49,WP_159622906,DNA-directed RNA polymerase subunit beta,Ruania rhizosphaerae,1845.1,0.0,77.02,100.0,1172
+group4_outlet_05_seq074,50,WP_413452113,DNA-directed RNA polymerase subunit beta,Georgenia phoenicis,1844.7,0.0,77.15,99.1,1171
+group4_outlet_05_seq074,51,WP_123917069,DNA-directed RNA polymerase subunit beta,Georgenia muralis,1844.3,0.0,77.97,99.1,1169
+group4_outlet_05_seq074,52,WP_089771339,DNA-directed RNA polymerase subunit beta,Ruania alba,1843.9,0.0,77.28,100.0,1172
+group4_outlet_05_seq074,53,WP_133110048,DNA-directed RNA polymerase subunit beta,Occultella glacieicola,1843.9,0.0,77.06,100.0,1174
+group4_outlet_05_seq074,54,WP_231053377,DNA-directed RNA polymerase subunit beta,Ruania suaedae,1843.5,0.0,76.94,100.0,1172
+group4_outlet_05_seq074,55,WP_139930147,DNA-directed RNA polymerase subunit beta,Georgenia yuyongxinii,1843.2,0.0,77.13,100.0,1169
+group4_outlet_05_seq074,56,WP_098468135,DNA-directed RNA polymerase subunit beta,Serinibacter salmoneus,1842.8,0.0,77.2,100.0,1167
+group4_outlet_05_seq074,57,WP_345215103,DNA-directed RNA polymerase subunit beta,Georgenia halophila,1840.5,0.0,77.28,99.1,1169
+group4_outlet_05_seq074,58,WP_147918574,DNA-directed RNA polymerase subunit beta,Ruania zhangjianzhongii,1840.1,0.0,77.28,100.0,1172
+group4_outlet_05_seq074,59,WP_231064666,DNA-directed RNA polymerase subunit beta,Ruania halotolerans,1840.1,0.0,76.85,100.0,1172
+group4_outlet_05_seq074,60,WP_460937996,DNA-directed RNA polymerase subunit beta,Phycicoccus ginsengisoli,1840.1,0.0,76.68,100.0,1158
+group4_outlet_05_seq074,61,WP_106297816,DNA-directed RNA polymerase subunit beta,Knoellia remsis,1840.1,0.0,77.04,100.0,1162
+group4_outlet_05_seq074,62,WP_122824933,DNA-directed RNA polymerase subunit beta,Georgenia faecalis,1839.7,0.0,77.64,99.1,1170
+group4_outlet_05_seq074,63,WP_015883639,DNA-directed RNA polymerase subunit beta,Beutenbergia cavernae,1839.7,0.0,76.73,100.0,1169
+group4_outlet_05_seq074,64,WP_168431148,DNA-directed RNA polymerase subunit beta,Cellulomonas hominis,1837.8,0.0,76.67,100.0,1168
+group4_outlet_05_seq074,65,WP_034243790,DNA-directed RNA polymerase subunit beta,Actinotalea fermentans,1837.4,0.0,76.43,100.0,1168
+group4_outlet_05_seq074,66,WP_236121557,DNA-directed RNA polymerase subunit beta,Cellulomonas palmilytica,1837.0,0.0,76.28,100.0,1169
+group4_outlet_05_seq074,67,WP_146899609,DNA-directed RNA polymerase subunit beta,Cellulomonas aerilata,1837.0,0.0,76.43,100.0,1168
+group4_outlet_05_seq074,68,WP_035913349,DNA-directed RNA polymerase subunit beta,Knoellia sinensis,1836.6,0.0,76.67,100.0,1162
+group4_outlet_05_seq074,69,WP_090031892,DNA-directed RNA polymerase subunit beta,Cellulomonas marina,1835.8,0.0,76.19,100.0,1169
+group4_outlet_05_seq074,70,WP_249380242,DNA-directed RNA polymerase subunit beta,Actinotalea alkalitolerans,1835.5,0.0,76.43,100.0,1168
+group4_outlet_05_seq074,71,WP_411941721,DNA-directed RNA polymerase subunit beta,Oryzobacter faecalis,1835.1,0.0,76.78,100.0,1162
+group4_outlet_05_seq074,72,WP_100348872,DNA-directed RNA polymerase subunit beta,Luteimicrobium subarcticum,1834.3,0.0,76.71,100.0,1169
+group4_outlet_05_seq074,73,WP_166099964,DNA-directed RNA polymerase subunit beta,Phycicoccus endophyticus,1833.5,0.0,76.33,100.0,1162
+group4_outlet_05_seq074,74,WP_048552896,DNA-directed RNA polymerase subunit beta,Nostocoides japonicum,1833.5,0.0,76.65,100.0,1161
+group4_outlet_05_seq074,75,WP_135973051,DNA-directed RNA polymerase subunit beta,Cellulomonas shaoxiangyii,1833.5,0.0,76.17,100.0,1168
+group4_outlet_05_seq074,76,WP_208195842,DNA-directed RNA polymerase subunit beta,Cellulomonas dongxiuzhuiae,1833.5,0.0,76.35,100.0,1168
+group4_outlet_05_seq074,77,WP_420183328,DNA-directed RNA polymerase subunit beta,Knoellia terrae,1833.2,0.0,76.59,100.0,1162
+group4_outlet_05_seq074,78,WP_416342465,DNA-directed RNA polymerase subunit beta,Isoptericola peretonis,1833.2,0.0,76.54,100.0,1170
+group4_outlet_05_seq074,79,WP_207339060,DNA-directed RNA polymerase subunit beta,Cellulomonas,1832.4,0.0,76.35,100.0,1168
+group4_outlet_05_seq074,80,WP_128365665,DNA-directed RNA polymerase subunit beta,Phycicoccus flavus,1832.4,0.0,76.78,100.0,1162
+group4_outlet_05_seq074,81,WP_283319486,DNA-directed RNA polymerase subunit beta,Cellulomonas,1832.4,0.0,76.41,100.0,1168
+group4_outlet_05_seq074,82,WP_227565751,DNA-directed RNA polymerase subunit beta,Cellulomonas wangsupingiae,1831.6,0.0,76.92,99.1,1168
+group4_outlet_05_seq074,83,WP_035946943,DNA-directed RNA polymerase subunit beta,Knoellia flava,1831.2,0.0,76.78,100.0,1162
+group4_outlet_05_seq074,84,WP_035056203,DNA-directed RNA polymerase subunit beta,Actinotalea bogoriensis,1830.8,0.0,76.17,100.0,1168
+group4_outlet_05_seq074,85,WP_100421690,DNA-directed RNA polymerase subunit beta,Sediminihabitans luteus,1830.8,0.0,76.28,100.0,1170
+group4_outlet_05_seq074,86,WP_168630702,DNA-directed RNA polymerase subunit beta,Cellulomonas denverensis,1830.8,0.0,76.58,100.0,1168
+group4_outlet_05_seq074,87,WP_203671233,DNA-directed RNA polymerase subunit beta,Cellulomonas phragmiteti,1830.8,0.0,76.75,99.1,1168
+group4_outlet_05_seq074,88,WP_166194322,DNA-directed RNA polymerase subunit beta,Metallococcus carri,1830.8,0.0,76.22,100.0,1161
+group4_outlet_05_seq074,89,WP_034223467,DNA-directed RNA polymerase subunit beta,Actinotalea ferrariae,1830.5,0.0,75.91,100.0,1169
+group4_outlet_05_seq074,90,WP_427384803,DNA-directed RNA polymerase subunit beta,Janibacter zhaoxuefangae,1830.1,0.0,75.97,100.0,1161
+group4_outlet_05_seq074,91,WP_186716481,DNA-directed RNA polymerase subunit beta,Quadrisphaera oryzae,1830.1,0.0,76.24,100.0,1160
+group4_outlet_05_seq074,92,WP_203669134,DNA-directed RNA polymerase subunit beta,Cellulomonas pakistanensis,1829.7,0.0,76.07,100.0,1168
+group4_outlet_05_seq074,93,WP_066641548,DNA-directed RNA polymerase subunit beta,Serinicoccus hydrothermalis,1829.7,0.0,76.61,100.0,1157
+group4_outlet_05_seq074,94,WP_191782332,DNA-directed RNA polymerase subunit beta,Cellulomonas avistercoris,1829.7,0.0,76.35,100.0,1168
+group4_outlet_05_seq074,95,WP_147064734,DNA-directed RNA polymerase subunit beta,Knoellia locipacati,1829.7,0.0,76.33,100.0,1162
+group4_outlet_05_seq074,96,WP_143782463,DNA-directed RNA polymerase subunit beta,Ornithinimicrobium ciconiae,1829.7,0.0,75.97,100.0,1161
+group4_outlet_05_seq074,97,WP_420188797,DNA-directed RNA polymerase subunit beta,Knoellia tibetensis,1829.3,0.0,76.42,100.0,1162
+group4_outlet_05_seq074,98,WP_152194673,DNA-directed RNA polymerase subunit beta,Georgenia subflava,1829.3,0.0,77.62,99.1,1169
+group4_outlet_05_seq074,99,WP_101394886,DNA-directed RNA polymerase subunit beta,Phycicoccus duodecadis,1829.3,0.0,76.5,100.0,1162
+group4_outlet_05_seq074,100,WP_166771943,DNA-directed RNA polymerase subunit beta,Cellulomonas uda,1828.9,0.0,75.94,100.0,1169
+group5_outlet_01_seq068,1,YP_499096,DNA-directed RNA polymerase subunit beta,Staphylococcus aureus subsp. aureus NCTC 8325,2426.0,0.0,100.0,100.0,1183
+group5_outlet_01_seq068,2,WP_000918683,DNA-directed RNA polymerase subunit beta,Staphylococcus argenteus,2422.5,0.0,99.66,100.0,1183
+group5_outlet_01_seq068,3,WP_047428292,DNA-directed RNA polymerase subunit beta,Staphylococcus schweitzeri,2418.7,0.0,99.58,100.0,1183
+group5_outlet_01_seq068,4,WP_095092576,DNA-directed RNA polymerase subunit beta,Staphylococcus simiae,2394.8,0.0,98.31,100.0,1183
+group5_outlet_01_seq068,5,WP_002441102,DNA-directed RNA polymerase subunit beta,Staphylococcus,2377.8,0.0,97.21,100.0,1183
+group5_outlet_01_seq068,6,WP_001833083,DNA-directed RNA polymerase subunit beta,Staphylococcus,2375.9,0.0,97.13,100.0,1183
+group5_outlet_01_seq068,7,WP_019235790,DNA-directed RNA polymerase subunit beta,Staphylococcus,2372.0,0.0,97.13,100.0,1183
+group5_outlet_01_seq068,8,WP_115313952,DNA-directed RNA polymerase subunit beta,Staphylococcus saccharolyticus,2371.3,0.0,96.87,100.0,1183
+group5_outlet_01_seq068,9,WP_103328831,DNA-directed RNA polymerase subunit beta,Staphylococcus croceilyticus,2370.1,0.0,96.96,100.0,1183
+group5_outlet_01_seq068,10,WP_126566028,DNA-directed RNA polymerase subunit beta,Staphylococcus pragensis,2369.7,0.0,97.13,100.0,1183
+group5_outlet_01_seq068,11,WP_002433101,DNA-directed RNA polymerase subunit beta,Staphylococcus,2368.6,0.0,96.96,100.0,1183
+group5_outlet_01_seq068,12,WP_017637536,DNA-directed RNA polymerase subunit beta,Staphylococcus,2367.8,0.0,97.04,100.0,1183
+group5_outlet_01_seq068,13,WP_103365703,DNA-directed RNA polymerase subunit beta,Staphylococcus petrasii,2367.8,0.0,96.96,100.0,1183
+group5_outlet_01_seq068,14,WP_011276718,DNA-directed RNA polymerase subunit beta,Staphylococcus,2366.3,0.0,96.79,100.0,1183
+group5_outlet_01_seq068,15,WP_002449020,DNA-directed RNA polymerase subunit beta,Staphylococcaceae,2365.5,0.0,96.7,100.0,1183
+group5_outlet_01_seq068,16,WP_053031027,DNA-directed RNA polymerase subunit beta,Staphylococcus,2362.8,0.0,96.7,100.0,1183
+group5_outlet_01_seq068,17,WP_002492996,DNA-directed RNA polymerase subunit beta,Staphylococcus,2361.6,0.0,96.45,99.9,1184
+group5_outlet_01_seq068,18,WP_107507839,DNA-directed RNA polymerase subunit beta,Staphylococcus,2357.8,0.0,96.37,100.0,1183
+group5_outlet_01_seq068,19,WP_103166804,DNA-directed RNA polymerase subunit beta,Staphylococcus devriesei,2355.9,0.0,96.2,100.0,1183
+group5_outlet_01_seq068,20,WP_195721504,DNA-directed RNA polymerase subunit beta,Staphylococcus durrellii,2330.8,0.0,95.18,100.0,1183
+group5_outlet_01_seq068,21,WP_048792364,DNA-directed RNA polymerase subunit beta,Staphylococcus lloydii,2330.8,0.0,95.1,100.0,1183
+group5_outlet_01_seq068,22,WP_103294576,DNA-directed RNA polymerase subunit beta,Staphylococcus kloosii,2330.8,0.0,95.1,100.0,1183
+group5_outlet_01_seq068,23,WP_069833283,DNA-directed RNA polymerase subunit beta,Staphylococcus,2326.2,0.0,94.59,100.0,1183
+group5_outlet_01_seq068,24,WP_002508569,DNA-directed RNA polymerase subunit beta,Staphylococcus,2325.1,0.0,94.59,100.0,1183
+group5_outlet_01_seq068,25,WP_107558152,DNA-directed RNA polymerase subunit beta,Staphylococcus pseudoxylosus,2323.9,0.0,94.76,100.0,1183
+group5_outlet_01_seq068,26,WP_251943446,DNA-directed RNA polymerase subunit beta,Staphylococcus,2323.5,0.0,94.76,100.0,1183
+group5_outlet_01_seq068,27,WP_039068591,DNA-directed RNA polymerase subunit beta,Staphylococcus,2323.1,0.0,94.76,100.0,1183
+group5_outlet_01_seq068,28,WP_017723035,DNA-directed RNA polymerase subunit beta,Staphylococcus,2322.0,0.0,94.67,100.0,1183
+group5_outlet_01_seq068,29,WP_064209891,DNA-directed RNA polymerase subunit beta,Staphylococcus,2321.6,0.0,94.67,100.0,1183
+group5_outlet_01_seq068,30,WP_029377929,DNA-directed RNA polymerase subunit beta,Staphylococcus,2321.2,0.0,94.59,100.0,1183
+group5_outlet_01_seq068,31,WP_099090504,DNA-directed RNA polymerase subunit beta,Staphylococcus edaphicus,2320.4,0.0,94.67,100.0,1183
+group5_outlet_01_seq068,32,WP_060552329,DNA-directed RNA polymerase subunit beta,Staphylococcus,2320.0,0.0,94.25,100.0,1183
+group5_outlet_01_seq068,33,WP_103388464,DNA-directed RNA polymerase subunit beta,Staphylococcus,2320.0,0.0,94.59,100.0,1183
+group5_outlet_01_seq068,34,WP_279525929,DNA-directed RNA polymerase subunit beta,Staphylococcus gallinarum,2319.3,0.0,94.59,100.0,1183
+group5_outlet_01_seq068,35,WP_064264075,DNA-directed RNA polymerase subunit beta,Staphylococcus,2318.5,0.0,94.59,100.0,1183
+group5_outlet_01_seq068,36,WP_229292426,DNA-directed RNA polymerase subunit beta,Staphylococcus ratti,2317.7,0.0,94.17,100.0,1183
+group5_outlet_01_seq068,37,WP_039647039,DNA-directed RNA polymerase subunit beta,Staphylococcus hyicus,2317.3,0.0,94.08,100.0,1183
+group5_outlet_01_seq068,38,WP_096810918,DNA-directed RNA polymerase subunit beta,Staphylococcus,2316.2,0.0,94.42,100.0,1183
+group5_outlet_01_seq068,39,WP_069994184,DNA-directed RNA polymerase subunit beta,Staphylococcus caeli,2315.4,0.0,94.25,100.0,1183
+group5_outlet_01_seq068,40,WP_011303839,DNA-directed RNA polymerase subunit beta,Staphylococcus,2314.3,0.0,94.51,100.0,1183
+group5_outlet_01_seq068,41,WP_107398531,DNA-directed RNA polymerase subunit beta,Staphylococcus chromogenes,2308.9,0.0,94.42,100.0,1183
+group5_outlet_01_seq068,42,WP_050331762,DNA-directed RNA polymerase subunit beta,Staphylococcus,2306.6,0.0,93.66,100.0,1183
+group5_outlet_01_seq068,43,WP_049408638,DNA-directed RNA polymerase subunit beta,Staphylococcus pettenkoferi,2304.2,0.0,93.72,99.7,1181
+group5_outlet_01_seq068,44,WP_262569575,DNA-directed RNA polymerase subunit beta,Staphylococcus schleiferi,2303.9,0.0,93.66,100.0,1183
+group5_outlet_01_seq068,45,WP_103370638,DNA-directed RNA polymerase subunit beta,Staphylococcus argensis,2303.1,0.0,93.64,99.7,1181
+group5_outlet_01_seq068,46,WP_103207198,DNA-directed RNA polymerase subunit beta,Staphylococcus felis,2302.3,0.0,93.58,100.0,1183
+group5_outlet_01_seq068,47,WP_069824863,DNA-directed RNA polymerase subunit beta,Staphylococcus,2301.6,0.0,94.25,100.0,1183
+group5_outlet_01_seq068,48,WP_198618386,DNA-directed RNA polymerase subunit beta,Staphylococcus canis,2300.0,0.0,93.49,100.0,1183
+group5_outlet_01_seq068,49,WP_046837704,DNA-directed RNA polymerase subunit beta,Staphylococcus,2300.0,0.0,94.17,100.0,1183
+group5_outlet_01_seq068,50,WP_103358668,DNA-directed RNA polymerase subunit beta,Staphylococcus rostri,2298.5,0.0,94.04,99.2,1184
+group5_outlet_01_seq068,51,WP_059107358,DNA-directed RNA polymerase subunit beta,Staphylococcus auricularis,2296.9,0.0,93.65,99.8,1181
+group5_outlet_01_seq068,52,WP_180809737,DNA-directed RNA polymerase subunit beta,Staphylococcus xeri,2295.8,0.0,93.16,100.0,1184
+group5_outlet_01_seq068,53,WP_086428483,DNA-directed RNA polymerase subunit beta,Staphylococcus cornubiensis,2295.4,0.0,94.08,100.0,1183
+group5_outlet_01_seq068,54,WP_323695698,DNA-directed RNA polymerase subunit beta,Staphylococcus pseudintermedius,2294.2,0.0,93.91,100.0,1184
+group5_outlet_01_seq068,55,WP_019166645,DNA-directed RNA polymerase subunit beta,Staphylococcus intermedius group,2293.5,0.0,93.91,100.0,1183
+group5_outlet_01_seq068,56,WP_009383845,DNA-directed RNA polymerase subunit beta,Staphylococcus massiliensis,2293.1,0.0,93.07,100.0,1183
+group5_outlet_01_seq068,57,WP_262605656,DNA-directed RNA polymerase subunit beta,Staphylococcus dromedarii,2293.1,0.0,93.79,99.4,1184
+group5_outlet_01_seq068,58,WP_044359255,DNA-directed RNA polymerase subunit beta,Staphylococcus microti,2293.1,0.0,93.71,99.4,1184
+group5_outlet_01_seq068,59,WP_019169064,DNA-directed RNA polymerase subunit beta,Staphylococcus intermedius,2291.2,0.0,93.83,100.0,1183
+group5_outlet_01_seq068,60,WP_085237566,DNA-directed RNA polymerase subunit beta,Staphylococcus lutrae,2289.2,0.0,93.66,100.0,1183
+group5_outlet_01_seq068,61,WP_095115229,DNA-directed RNA polymerase subunit beta,Staphylococcus muscae,2287.7,0.0,93.68,99.0,1184
+group5_outlet_01_seq068,62,WP_162682776,DNA-directed RNA polymerase subunit beta,Staphylococcus ursi,2283.4,0.0,94.05,99.4,1176
+group5_outlet_01_seq068,63,WP_023016305,DNA-directed RNA polymerase subunit beta,Staphylococcus,2275.0,0.0,92.81,100.0,1183
+group5_outlet_01_seq068,64,WP_123145599,DNA-directed RNA polymerase subunit beta,Staphylococcus debuckii,2269.2,0.0,92.48,100.0,1183
+group5_outlet_01_seq068,65,WP_047131412,DNA-directed RNA polymerase subunit beta,Staphylococcus,2268.8,0.0,92.56,100.0,1183
+group5_outlet_01_seq068,66,WP_095106865,DNA-directed RNA polymerase subunit beta,Staphylococcus piscifermentans,2266.9,0.0,92.39,100.0,1183
+group5_outlet_01_seq068,67,WP_012664227,DNA-directed RNA polymerase subunit beta,Staphylococcus carnosus,2266.5,0.0,92.39,100.0,1183
+group5_outlet_01_seq068,68,WP_048541353,DNA-directed RNA polymerase subunit beta,Mammaliicoccus,2201.8,0.0,89.1,100.0,1184
+group5_outlet_01_seq068,69,WP_078357778,DNA-directed RNA polymerase subunit beta,Mammaliicoccus,2200.2,0.0,89.02,100.0,1184
+group5_outlet_01_seq068,70,WP_095089756,DNA-directed RNA polymerase subunit beta,Mammaliicoccus stepanovicii,2199.9,0.0,89.2,100.0,1184
+group5_outlet_01_seq068,71,WP_016999421,DNA-directed RNA polymerase subunit beta,Mammaliicoccus,2196.0,0.0,89.33,99.7,1184
+group5_outlet_01_seq068,72,WP_016911156,DNA-directed RNA polymerase subunit beta,Mammaliicoccus,2195.6,0.0,88.85,100.0,1184
+group5_outlet_01_seq068,73,WP_086043516,DNA-directed RNA polymerase subunit beta,Macrococcoides canis,2191.4,0.0,88.71,99.6,1180
+group5_outlet_01_seq068,74,WP_224183614,DNA-directed RNA polymerase subunit beta,Macrococcus armenti,2187.2,0.0,88.71,99.6,1180
+group5_outlet_01_seq068,75,WP_219493303,DNA-directed RNA polymerase subunit beta,Macrococcus,2184.8,0.0,88.29,99.6,1180
+group5_outlet_01_seq068,76,WP_262995766,DNA-directed RNA polymerase subunit beta,Macrococcus capreoli,2182.5,0.0,87.91,100.0,1180
+group5_outlet_01_seq068,77,WP_414042144,DNA-directed RNA polymerase subunit beta,Macrococcus animalis,2182.1,0.0,88.0,100.0,1180
+group5_outlet_01_seq068,78,WP_099577360,DNA-directed RNA polymerase subunit beta,Macrococcoides goetzii,2180.6,0.0,88.0,100.0,1180
+group5_outlet_01_seq068,79,WP_111717480,DNA-directed RNA polymerase subunit beta,Macrococcus epidermidis,2178.7,0.0,87.91,100.0,1180
+group5_outlet_01_seq068,80,WP_203545866,DNA-directed RNA polymerase subunit beta,Macrococcoides bohemicum,2178.7,0.0,87.83,100.0,1180
+group5_outlet_01_seq068,81,WP_414054703,DNA-directed RNA polymerase subunit beta,Macrococcus equi,2177.1,0.0,87.83,100.0,1180
+group5_outlet_01_seq068,82,WP_103214805,DNA-directed RNA polymerase subunit beta,Macrococcoides caseolyticum,2176.8,0.0,88.03,99.6,1180
+group5_outlet_01_seq068,83,WP_289650166,DNA-directed RNA polymerase subunit beta,Macrococcus bovicus,2168.3,0.0,88.62,98.8,1179
+group5_outlet_01_seq068,84,WP_133431840,DNA-directed RNA polymerase subunit beta,Macrococcus brunensis,2166.3,0.0,88.45,98.8,1179
+group5_outlet_01_seq068,85,WP_133430566,DNA-directed RNA polymerase subunit beta,Macrococcus hajekii,2162.9,0.0,87.83,100.0,1180
+group5_outlet_01_seq068,86,WP_133418113,DNA-directed RNA polymerase subunit beta,Macrococcus carouselicus,2162.5,0.0,88.06,99.7,1180
+group5_outlet_01_seq068,87,WP_254249928,DNA-directed RNA polymerase subunit beta,Macrococcus equipercicus,2161.3,0.0,87.4,100.0,1178
+group5_outlet_01_seq068,88,WP_133443664,DNA-directed RNA polymerase subunit beta,Macrococcus lamae,2158.6,0.0,88.22,99.0,1178
+group5_outlet_01_seq068,89,WP_077140926,DNA-directed RNA polymerase subunit beta,Abyssicoccus albus,2088.5,0.0,84.97,99.4,1179
+group5_outlet_01_seq068,90,WP_046513149,DNA-directed RNA polymerase subunit beta,Salinicoccus sediminis,2062.7,0.0,84.0,99.3,1178
+group5_outlet_01_seq068,91,WP_017549971,DNA-directed RNA polymerase subunit beta,Salinicoccus carnicancri,2058.5,0.0,83.91,99.3,1178
+group5_outlet_01_seq068,92,WP_342388024,DNA-directed RNA polymerase subunit beta,Salinicoccus bachuensis,2057.3,0.0,84.97,97.9,1178
+group5_outlet_01_seq068,93,WP_040106277,DNA-directed RNA polymerase subunit beta,Salinicoccus roseus,2057.3,0.0,84.97,97.9,1178
+group5_outlet_01_seq068,94,WP_031545916,DNA-directed RNA polymerase subunit beta,Salinicoccus luteus,2055.8,0.0,84.89,97.9,1178
+group5_outlet_01_seq068,95,WP_046791260,DNA-directed RNA polymerase subunit beta,Salinicoccus halodurans,2053.5,0.0,83.74,99.3,1178
+group5_outlet_01_seq068,96,WP_145289969,DNA-directed RNA polymerase subunit beta,Salinicoccus,2051.9,0.0,84.63,97.9,1178
+group5_outlet_01_seq068,97,WP_185125220,DNA-directed RNA polymerase subunit beta,Jeotgalicoccus meleagridis,2050.8,0.0,84.38,98.0,1180
+group5_outlet_01_seq068,98,WP_160656025,DNA-directed RNA polymerase subunit beta,Salinicoccus hispanicus,2050.0,0.0,84.56,98.0,1178
+group5_outlet_01_seq068,99,WP_097041396,DNA-directed RNA polymerase subunit beta,Salinicoccus kekensis,2046.5,0.0,84.46,97.9,1178
+group5_outlet_01_seq068,100,WP_230822034,DNA-directed RNA polymerase subunit beta,Salinicoccus halitifaciens,2045.4,0.0,84.46,97.9,1178

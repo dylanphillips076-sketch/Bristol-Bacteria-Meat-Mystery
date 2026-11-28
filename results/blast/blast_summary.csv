@@ -1,0 +1,6 @@
+query,most_common_protein_top20,top_hit_species,top_hit_accession,top_hit_identity,top_hit_query_cover,top_hit_e_value
+group1_outlet_02_seq053,DNA-directed RNA polymerase subunit beta,Bifidobacterium longum,WP_013582405,100.0,100.0,0.0
+group2_outlet_08_seq092,DNA-directed RNA polymerase subunit beta,Lactiplantibacillus,WP_003641246,100.0,100.0,0.0
+group3_outlet_05_seq033,DNA-directed RNA polymerase subunit beta,Micrococcus,WP_180535984,99.49,100.0,0.0
+group4_outlet_05_seq074,DNA-directed RNA polymerase subunit beta,Brachybacterium,WP_096163301,100.0,100.0,0.0
+group5_outlet_01_seq068,DNA-directed RNA polymerase subunit beta,Staphylococcus aureus subsp. aureus NCTC 8325,YP_499096,100.0,100.0,0.0

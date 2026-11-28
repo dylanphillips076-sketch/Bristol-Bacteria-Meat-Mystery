@@ -1,8 +1,13 @@
-Date searched: 2026-11-27
+Source: NCBI BLAST website, one search containing all predicted proteins
+RID: GNHDXHWY014
+Date searched: 2026-11-28
 Program: blastp
-Database: refseq_protein
+Database: RefSeq Select proteins (refseq_select_prot)
 Max target sequences: 100
 Expect threshold: 0.05
+Word size: 5
 Matrix: BLOSUM62
-Gap costs: 11 1
+Gap costs: existence 11, extension 1
+Compositional adjustments: conditional compositional score matrix adjustment
+Low-complexity filter: off
 Reference candidates: query cover >= 90%
