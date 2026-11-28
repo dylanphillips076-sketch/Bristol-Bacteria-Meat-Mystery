@@ -604,32 +604,36 @@ the same length as the RpoB of its BLAST-matched genus (e.g. group 1 and the
 references: 1,183 aa), consistent with complete ORF predictions in Step 4. The
 *E. coli* outgroup protein is longer (1,342 aa).
 
+
+
 ### Part 2: alignment with Clustal Omega (Blue Pebble)
 
-**Script:** `scripts/06_align_proteins_clustalo.sh` (Slurm job script)
-**Input:** `results/tree_input_proteins.fasta`
-**Output:** `results/tree_proteins_aligned.fasta`, `results/slurm-<jobID>.out`
+| | |
+|---|---|
+| **Script** | `scripts/06_align_proteins_clustalo.sh` (Slurm job script) |
+| **Input** | `results/tree_input_proteins.fasta` |
+| **Output** | `results/tree_proteins_aligned.fasta`, `results/slurm-<jobID>.out` |
 
-> [!NOTE]
-> **Not a University of Bristol user?** The alignment is included as
-> `results/tree_proteins_aligned.fasta`, so this part can be skipped. To repeat
-> it, run Clustal Omega locally:
-> ```bash
-> clustalo -i results/tree_input_proteins.fasta -o results/tree_proteins_aligned.fasta --seqtype=Protein --outfmt=fasta
-> ```
 
-The job requests 1 node, 1 task, 1000 MB memory and up to 1 hour on the
-`teach_cpu` partition, loads `clustal-omega/1.2.4-skoy`, and runs:
+**Job settings:** 1 node, 1 task, 1000 MB memory, up to 1 hour, `teach_cpu`
+partition, module `clustal-omega/1.2.4-skoy`. Command run:
 
 ```bash
-clustalo -i ~/job_data/tree_input_proteins.fasta -o ~/job_data/tree_proteins_aligned.fasta --seqtype=Protein --outfmt=fasta --force
+clustalo -i ~/job_data/tree_input_proteins.fasta \
+         -o ~/job_data/tree_proteins_aligned.fasta \
+         --seqtype=Protein --outfmt=fasta --force
 ```
 
 All other Clustal Omega settings were left at their defaults.
 
-**Manual steps** (Git Bash on a computer on the university network or VPN).
-Replace `<username>` with your University of Bristol username and `<jobID>`
-with the job number printed by `sbatch`.
+<details>
+<summary><b>Blue Pebble commands (click to expand)</b></summary>
+
+This follows the same workflow as the DNA alignment in
+[Step 2a](#step-2a-multiple-sequence-alignment-clustal-omega-on-blue-pebble),
+with the protein input file and job script. Run in Git Bash on a computer on the
+university network or VPN. Replace `<username>` with your University of Bristol
+username and `<jobID>` with the job number printed by `sbatch`.
 
 ```bash
 # from the repository root: stage the input files
@@ -650,22 +654,4 @@ scp <username>@bp1-login.acrc.bris.ac.uk:slurm-<jobID>.out results/
 rm -r job_data
 ```
 
-The job (ID [jobID]) ran on [node] on [date]. The alignment contains all 26
-sequences and is [length] columns long.
-
-### Rationale
-
-| Decision | Why |
-|---|---|
-| Proteins aligned, rather than DNA | Protein sequences change more slowly than DNA and are less affected by saturation and GC-content differences, which matters here because the groups come from two phyla with very different GC content |
-| References downloaded with a script (`Entrez.efetch`) | The sequences used are exactly those listed in `selected_references.csv`, and the download can be repeated |
-| Short labels with only letters, numbers and underscores | Spaces and symbols can be altered or rejected by alignment and tree software; the labels still give the species and accession, as required for informative tip labels |
-| Representatives labelled in capitals with their outlet | Makes them easy to distinguish from the references in the tree, and links each one to its food outlet |
-| Clustal Omega on Blue Pebble | The same tool and workflow as the DNA alignment in Step 2a and the course practicals; fast and accurate for this number of protein sequences |
-| `--seqtype=Protein` | Ensures the sequences are treated as amino acids |
-
-### Limitations
-- The *E. coli* outgroup has regions not present in the Gram-positive proteins,
-  so the alignment contains gaps at these positions in all ingroup sequences.
-- The alignment was not trimmed or manually edited; poorly aligned regions, if
-  any, are included in the phylogenetic analysis.
+</details>
