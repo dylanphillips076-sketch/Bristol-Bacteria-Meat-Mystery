@@ -1,0 +1,8 @@
+Date searched: 2026-11-27
+Program: blastp
+Database: refseq_protein
+Max target sequences: 100
+Expect threshold: 0.05
+Matrix: BLOSUM62
+Gap costs: 11 1
+Reference candidates: query cover >= 90%

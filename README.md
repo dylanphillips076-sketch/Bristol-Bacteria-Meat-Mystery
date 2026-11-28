@@ -69,11 +69,12 @@ when `03_sequence_groups.R` is run.
    `scripts/03_sequence_groups.R` from top to bottom (missing packages are
    installed automatically).
 
-## Code adaptation 
 
-Code is largely adapted from University of Bristol, Bioinformatics (MSc) term 1 practicals. References to certain practicals will be from the 'Intro to Bioinformatics' unit. 
+## Code adaptation
 
-Course code: BIOLM0052_TB-1 
+Code in this repository adapts and extends material from the practical classes
+of **Introduction to Bioinformatics** (BIOLM0052, TB1), MSc Bioinformatics,
+University of Bristol, 2026/27. Specific practicals are named in each step below.
 
 ---
 
@@ -208,6 +209,8 @@ rm -r job_data
   site only for the pair of sequences where one has a gap, so gaps are not counted
   as differences and as much data as possible is used for each comparison.
 
+
+
 ### Principal coordinates analysis (PCoA)
 
 - **Function:** `cmdscale(jc_dist, k = 10, eig = TRUE)`
@@ -245,6 +248,15 @@ rm -r job_data
   `results/sequence_groups.csv`. Group numbers assigned by k-means are arbitrary
   labels.
 
+
+### Figures
+
+**Figure 1.** PCoA of pairwise JC69 distances, coloured by food outlet.
+![PCoA coloured by outlet](figures/fig1_pcoa_by_outlet.png)
+
+**Figure 2.** PCoA coloured by inferred sequence group (k-means, k = 5).
+![PCoA coloured by group](figures/fig2_pcoa_by_group.png)
+
 ---
 
 ## Step 3: Representative sequences (R)
@@ -260,6 +272,7 @@ rm -r job_data
 - Alignment gaps are removed (`ape::del.gaps()`) and the sequences are saved, with
   the group added to the header, to `results/representatives.fasta` for ORF
   prediction.
+
 
 ---
 
@@ -277,6 +290,8 @@ rm -r job_data
 
 ---
 ## Step 4: ORF prediction and translation (Python)
+
+Code here is adapted from the 'Python for Bioinformaticians' practical 
 
 **Script:** `scripts/04_orf_prediction.py`
 **Input:** `results/representatives.fasta` (one representative per sequence group, from Step 3)
@@ -307,16 +322,18 @@ The script adapts the longest-ORF method from the Biopython practical
 stop codons, and the longest stretch is kept. Protein statistics use the code
 from Exercise 8.4.
 
-### Changes to  practical code, and why
+### Rationale
 
-| Change | Why |
+| Decision | Why |
 |---|---|
-| All **six** reading frames are searched (three forward and three on the reverse complement), not only the three forward frames | The orientation of the gene in each sequence was unknown; a gene on the reverse strand would be missed by a forward-only search |
-| Each ORF is trimmed to begin at the first **methionine (ATG start codon)** | The practical kept the whole stretch between stop codons, which can include residues upstream of the true start codon that are not part of the protein |
-| Translation uses **NCBI genetic code table 11** instead of table 2 | Table 2 is the vertebrate mitochondrial code used for the practical's animal sequences; table 11 is the standard code for bacteria |
-| Sequences are trimmed to a multiple of three before translation | Prevents translation of incomplete codons at the sequence end |
-| The strand, frame, start/end coordinates and presence of a stop codon are recorded for every ORF | Allows the location and completeness of each ORF to be reported and checked |
+| Sequences were translated and analysed as **proteins** rather than DNA | Protein sequences evolve more slowly than DNA because many nucleotide changes are synonymous. They are less affected by saturation and GC-content bias, so they detect homology across greater evolutionary distances, which suits BLASTP and comparisons between distantly related bacteria |
+| All **six** reading frames are searched (three forward and three on the reverse complement), extending the three-frame approach in the Python practical | The orientation of the gene in each sequence was unknown; a gene on the reverse strand would be missed by a forward-only search |
+| **ATG, GTG and TTG** are accepted as start codons, and the ORF must begin with one | All three are used as start codons in bacteria. Requiring a start codon avoids including residues upstream of the true start, and accepting GTG/TTG avoids missing genes that do not start with ATG |
+| Translation uses **NCBI genetic code table 11** | Table 11 is the standard genetic code for bacteria |
+| Sequences are trimmed to a multiple of three before translation | Prevents translation of incomplete codons at the end of the sequence |
+| The strand, frame, start/end coordinates, start codon and presence of a stop codon are recorded for every ORF | Allows the location and completeness of each ORF to be reported and checked |
 | The five longest ORFs per sequence are saved, and the chosen ORF is checked for a start codon, stop codon, length divisible by three, and length relative to the second-longest ORF | Provides evidence to justify the choice of ORF rather than accepting the longest automatically |
+| The longest ORF is selected as the predicted gene | Long ORFs rarely occur by chance, because stop codons appear frequently in non-coding sequence; the longest ORF is therefore the most likely protein-coding gene |
 | The repository root is located automatically | The script runs correctly whether run as a whole from the repository root or cell by cell in VS Code |
 | The script is divided into `# %%` cells | Allows step-by-step running in VS Code while remaining a standard Python script |
 

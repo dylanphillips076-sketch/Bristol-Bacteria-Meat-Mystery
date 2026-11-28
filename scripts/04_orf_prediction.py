@@ -6,8 +6,8 @@
 # Extensions to the practical code:
 #   - searches all SIX reading frames (3 forward + 3 on the reverse strand),
 #     not just the 3 forward frames
-#   - an ORF must begin with a start codon (ATG -> M), not just be a stretch
-#     without stop codons
+#   - an ORF must begin with a bacterial start codon (ATG, GTG or TTG), not
+#     just be a stretch without stop codons
 #   - uses the bacterial genetic code (NCBI table 11)
 #   - records the strand, frame and nucleotide coordinates of each ORF and
 #     whether it ends in a stop codon
@@ -44,6 +44,9 @@ print("Repository root:", ROOT)
 
 # %% 2. Settings
 GENETIC_CODE = 11   # NCBI table 11: bacterial, archaeal and plant plastid code
+# start codons used by bacteria (table 11). ATG is the most common, but GTG and
+# TTG are also used; all are translated as methionine (M) when used as a start
+START_CODONS = ("ATG", "GTG", "TTG")
 MIN_ORF_AA = 50     # ignore very short ORFs (in amino acids) when listing candidates
 N_CANDIDATES = 5    # number of candidate ORFs saved per sequence
 
@@ -65,10 +68,17 @@ def find_orfs(dna_seq, table=GENETIC_CODE, min_aa=MIN_ORF_AA):
             # as in the practical: split the translation at stop codons ("*")
             aa_pos = 0   # position of the current fragment in the translation
             for fragment in protein.split("*"):
-                # extension: the ORF starts at the first methionine (start codon)
-                m = fragment.find("M")
+                # extension: the ORF starts at the first start codon in the fragment
+                m = -1
+                for i in range(len(fragment)):
+                    codon_start = frame + 3 * (aa_pos + i)
+                    if str(nuc[codon_start:codon_start + 3]) in START_CODONS:
+                        m = i
+                        break
                 if m != -1 and len(fragment) - m >= min_aa:
-                    orf_protein = fragment[m:]
+                    start_codon = str(nuc[frame + 3 * (aa_pos + m):frame + 3 * (aa_pos + m) + 3])
+                    # a start codon is always translated as methionine
+                    orf_protein = "M" + fragment[m + 1:]
                     # the fragment ends in a stop codon unless it runs off the end
                     has_stop = aa_pos + len(fragment) < len(protein)
 
@@ -86,6 +96,7 @@ def find_orfs(dna_seq, table=GENETIC_CODE, min_aa=MIN_ORF_AA):
                     orfs.append({
                         "strand": "+" if strand == 1 else "-",
                         "frame": frame + 1,
+                        "start_codon": start_codon,
                         "start_nt": start,
                         "end_nt": stop,
                         "length_aa": len(orf_protein),
@@ -150,7 +161,7 @@ for record in records:
         "end_nt": best["end_nt"],
         "length_aa": best["length_aa"],
         "second_longest_aa": second,
-        "starts_with_M": best["protein"].startswith("M"),
+        "start_codon": best["start_codon"],
         "ends_with_stop": best["ends_with_stop"],
         "length_nt_multiple_of_3": best["length_nt"] % 3 == 0,
         "percent_of_sequence": round(100 * best["length_nt"] / len(record.seq), 1),
@@ -169,6 +180,7 @@ for record in records:
         continue
     best = best_orfs[record.id]
     info = (f"longest ORF strand {best['strand']} frame {best['frame']} "
+            f"start {best['start_codon']} "
             f"{best['start_nt']}-{best['end_nt']} "
             f"{best['length_aa']} aa genetic code {GENETIC_CODE}")
 
