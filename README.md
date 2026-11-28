@@ -56,18 +56,51 @@ when `03_sequence_groups.R` is run.
 
 ## How to reproduce the analysis
 
-1. Clone the repository:
-   `git clone https://github.com/dylanphillips076-sketch/Bristol-Bacteria-Meat-Mystery.git`
-2. **Step 1** - from the repository root in a Bash terminal:
-   `bash scripts/01_prepare_data.sh`
-   Check: `grep -c ">" all_sequences.fasta` should return `100`.
-3. **Step 2a** - align the sequences on Blue Pebble (manual commands below,
-   see *Step 2a*). The resulting alignment is already included as
-   `results/all_sequences_aligned.fasta`, so this step can be skipped to
-   reproduce the downstream results.
-4. **Steps 2b-3** - open `Bristol-Bacteria-Meat-Mystery.Rproj` in RStudio and run
-   `scripts/03_sequence_groups.R` from top to bottom (missing packages are
-   installed automatically).
+All commands are run from the repository root. Outputs of every step, including
+the manual ones, are included in the repository, so any step can be skipped to
+reproduce the steps that follow it.
+
+**Setup: clone the repository and install Python packages**
+```bash
+git clone https://github.com/dylanphillips076-sketch/Bristol-Bacteria-Meat-Mystery.git
+cd Bristol-Bacteria-Meat-Mystery
+pip install -r requirements.txt
+```
+
+**Step 1: combine and label the sequences** (Bash)
+```bash
+bash scripts/01_prepare_data.sh
+grep -c ">" all_sequences.fasta   # should return 100
+```
+
+**Step 2a: align the sequences** (Blue Pebble HPC, *manual*)
+See [Step 2a](#step-2a-multiple-sequence-alignment-clustal-omega-on-blue-pebble)
+for the commands. Output: `results/all_sequences_aligned.fasta`.
+
+**Steps 2b–3: sequence groups and representatives** (R)
+Open `Bristol-Bacteria-Meat-Mystery.Rproj` in RStudio and run
+`scripts/03_sequence_groups.R` from top to bottom (missing packages are installed
+automatically). Output: `figures/`, `results/representatives.fasta`.
+
+**Step 4: ORF prediction and translation** (Python)
+```bash
+python scripts/04_orf_prediction.py
+```
+Output: `results/representative_proteins.fasta`.
+
+**Step 5: BLASTP and reference selection**
+Run BLASTP on the NCBI website (*manual*; see
+[Step 5](#step-5-blastp-searches-and-reference-selection) for the settings) and
+save the results as `results/blast/all_queries_blastp.xml`. Then process them:
+```bash
+python scripts/05_blastp.py
+```
+References are chosen from `results/blast/reference_candidates.csv` (*manual*)
+and recorded in `results/selected_references.csv`.
+
+**Step 6: alignment of proteins and references:** [To be added]
+
+**Step 7: phylogenetic tree:** [To be added]
 
 
 ## Code adaptation
@@ -116,15 +149,28 @@ University of Bristol, 2026/27. Specific practicals are named in each step below
 
 ## Step 2a: Multiple sequence alignment (Clustal Omega on Blue Pebble)
 
+
+**Why an alignment was needed:** the sequences varied in length (3,126–3,615 bp),
+so positions could not be compared directly. Pairwise distances require
+homologous positions to be lined up in the same column, so all 100 sequences
+were aligned first.
+
 **Script:** `scripts/02_align_clustalo.sh` (Slurm job script)
+**Input:** `all_sequences.fasta`
+**Output:** `results/all_sequences_aligned.fasta`, `results/slurm-20382747.out`
 
-**Why an alignment was needed**
+> [!NOTE]
+> **Not a University of Bristol user?** Blue Pebble is only available to
+> University of Bristol users. The alignment used in this analysis is already
+> included as `results/all_sequences_aligned.fasta`, so this step can be skipped.
+> To repeat it, run Clustal Omega locally with default settings:
+> ```bash
+> clustalo -i all_sequences.fasta -o results/all_sequences_aligned.fasta --outfmt=fasta
+> ```
+> or adapt `scripts/02_align_clustalo.sh` to another Slurm cluster by changing the
+> `--account`, `--partition` and `module load` lines.
 
-The sequences varied in length (3,126-3,615 bp), so positions could not be compared
-directly. Pairwise distances require homologous positions to be lined up in the
-same column, so all 100 sequences were aligned first.
-
-**What the job does**
+### What the job does
 
 - Requests 1 node, 1 task, 1000 MB memory and up to 1 hour on the `teach_cpu`
   partition, under the course HPC account.
@@ -361,3 +407,265 @@ representatives have very similar properties.
 - Only ATG start codons are considered; bacteria can also use GTG or TTG,
   so the true start may lie further upstream.
 - Each ORF ends at the end of its sequence, so no downstream sequence is included.
+
+## Step 5: BLASTP searches and reference selection
+
+### Overview
+The five predicted proteins from Step 4 were searched against NCBI's RefSeq
+Select protein database using BLASTP on the NCBI website. The results were
+downloaded as XML and processed with `scripts/05_blastp.py`, which summarises
+the hits and produces a shortlist of candidate reference sequences. Four
+references per sequence group, and one outgroup, were then chosen by hand.
+
+**Script:** `scripts/05_blastp.py`
+**Input:** `results/blast/all_queries_blastp.xml` (downloaded from NCBI BLAST)
+**Output** (in `results/blast/`):
+- `blast_hits.csv`: every hit for every query (5 queries x 100 hits)
+- `blast_summary.csv`: protein identity and closest species for each group
+- `reference_candidates.csv`: shortlist of possible references for each group
+- `blast_settings.txt`: details of the BLAST search
+
+**Manual output:** `results/selected_references.csv`: the references and
+outgroup chosen for the alignment and phylogeny.
+
+---
+
+### Manual step 1: BLASTP on the NCBI website
+
+1. Open `results/representative_proteins.fasta` and copy all five sequences,
+   including their FASTA headers (the headers are used to name each group).
+2. Go to [NCBI BLAST](https://blast.ncbi.nlm.nih.gov) → **Protein BLAST**.
+3. Paste the sequences into **Enter Query Sequence**.
+4. Set **Database** to **RefSeq Select proteins (refseq_select)**. Leave
+   **Organism** blank so the search is not biased towards any expected taxa.
+5. Leave **Algorithm** as **blastp** and the algorithm parameters at their
+   defaults (see table below), then click **BLAST**.
+6. When the search finishes, click **Download All → XML** (next to the RID).
+7. Rename the file `all_queries_blastp.xml` and save it in `results/blast/`.
+
+[Optional screenshots, e.g. `![Database selection](docs/images/blast_database.png)`]
+
+| Setting | Value |
+|---|---|
+| Date searched | 28 November 2026 |
+| RID | GNHDXHWY014 |
+| Program | blastp |
+| Database | RefSeq Select proteins (refseq_select_prot) |
+| Max target sequences | 100 |
+| Expect threshold | 0.05 |
+| Word size | 5 |
+| Matrix | BLOSUM62 |
+| Gap costs | Existence 11, extension 1 |
+| Compositional adjustments | Conditional compositional score matrix adjustment |
+| Low-complexity filter | Off |
+
+### Processing the results
+
+```bash
+pip install biopython pandas
+python scripts/05_blastp.py
+```
+
+The script runs in seconds and does not contact NCBI. It was written for this
+project rather than adapted from a practical.
+
+1. **Reads** every query and hit from the XML file (`Bio.Blast.NCBIXML`). The file
+   may contain one XML document or several joined together; both are handled.
+2. **Records** each hit's accession, protein name, species, bit score, E-value,
+   % identity (identical positions / alignment length) and query cover (aligned
+   length of the query / query length), and saves them to `blast_hits.csv`.
+3. **Summarises** each group (`blast_summary.csv`): the most common protein name
+   among the top 20 hits, and the species, accession, % identity, query cover and
+   E-value of the top hit.
+4. **Shortlists reference candidates** (`reference_candidates.csv`): the best hit
+   for each named species, up to 15 per group, after removing unsuitable hits.
+
+### Rationale
+
+| Decision | Why |
+|---|---|
+| BLASTP (protein) rather than BLASTN (DNA) | Protein sequences evolve more slowly than DNA because many nucleotide changes are synonymous, so protein searches are more sensitive for identifying homologues across species |
+| BLAST run on the NCBI website, with all proteins in one search | Faster and more reliable than submitting separate searches from a script; the downloaded XML is saved in the repository, so the results used are preserved |
+| **RefSeq Select** database | A curated, low-redundancy subset of RefSeq: hits come from named species with stable accessions, and there are fewer near-identical strains, which helps taxonomic breadth when choosing references |
+| No organism restriction | Avoids biasing the results towards expected taxa |
+| NCBI default scoring settings | Standard, widely used settings for full-length protein searches |
+| Protein identity from the most common name among the top 20 hits | More robust than relying on a single top hit, which could be misannotated |
+| Reference candidates must have a two-word species name and no "sp.", "uncultured", "unclassified" or "metagenome" | References need a clear species name to label the tree; genus-only "MULTISPECIES" entries are excluded for the same reason |
+| Hypothetical and partial proteins excluded | May be poorly annotated or incomplete |
+| Query cover ≥ 90% | Ensures references align across nearly the whole protein |
+| One hit per species | Avoids redundant strains of the same species and gives taxonomic breadth |
+
+---
+
+### Results
+
+All five proteins were identified as **DNA-directed RNA polymerase subunit beta
+(RpoB)**: this was the most common annotation among the top 20 hits for every
+group, with 100% query cover and E-values of 0.0.
+
+| Group | Representative from | Top hit | Identity | Level of identification |
+|---|---|---|---|---|
+| 1 | outlet 02 | *Bifidobacterium longum* | 100% | Species (next species 98.3%) |
+| 2 | outlet 08 | *Lactiplantibacillus* (genus-level entry) | 100% | Genus; best named species *L. paraplantarum* (99.8%) |
+| 3 | outlet 05 | *Micrococcus* (genus-level entry) | 99.5% | Genus; best named species 97.6% |
+| 4 | outlet 05 | *Brachybacterium* (genus-level entry) | 100% | Genus; best named species ~95% |
+| 5 | outlet 01 | *Staphylococcus aureus* NCTC 8325 | 100% | Species; close relatives *S. argenteus* (99.7%) and *S. schweitzeri* (99.6%) |
+
+Several top hits are "MULTISPECIES" entries labelled only with a genus. These
+represent an identical protein shared by several species, so they support the
+genus but not a specific species.
+
+---
+
+### Manual step 2: choosing references
+
+References were chosen by hand from `results/blast/reference_candidates.csv`
+and recorded in `results/selected_references.csv` (columns: `group`,
+`accession`, `species`, `role`, `reason`). For each group, four references were
+selected:
+
+1. the closest named species (proposed identity of the group);
+2. two further species from the same genus, spread across the range of % identity;
+3. a more distant species, or a species from a different genus where available,
+   to give taxonomic breadth.
+
+| Group | References |
+|---|---|
+| 1 | *B. longum* WP_013582405; *B. colobi* WP_214375740; *B. callitrichidarum* WP_109057883; *B. angulatum* WP_003827094 |
+| 2 | *L. paraplantarum* WP_033609627; *L. carotarum* WP_318766831; *L. fabifermentans* WP_082621231; *L. kimchii* WP_105450084 |
+| 3 | *M. endophyticus* WP_184169854; *M. flavus* WP_135028799; *M. lylae* WP_067188465; *Citricoccus muralis* WP_115931902 |
+| 4 | *B. tyrofermentans* WP_193116781; *B. ginsengisoli* WP_096798595; *B. avium* WP_089064432; *B. squillarum* WP_010532541 |
+| 5 | *S. aureus* NCTC 8325 YP_499096; *S. argenteus* WP_000918683; *S. schweitzeri* WP_047428292; *S. saccharolyticus* WP_115313952 |
+
+**Outgroup:** *Escherichia coli* K-12 MG1655 RpoB (NP_418414.1). All five groups
+belong to the Gram-positive phyla Actinomycetota (groups 1, 3 and 4) and Bacillota
+(groups 2 and 5); *E. coli* belongs to a different phylum (Pseudomonadota), so it
+falls outside all ingroup sequences and can be used to root the tree.
+
+To use different references, edit `results/selected_references.csv` before
+running the next step.
+
+---
+
+### Limitations
+- RpoB differs by only ~1–2% between closely related species (e.g. within the
+  *S. aureus* complex), so species-level identification depends on the top hit
+  being clearly better than the next species.
+- Groups 2, 3 and 4 matched genus-level "MULTISPECIES" entries best, so they are
+  identified with confidence only to genus.
+- RefSeq Select is a subset of all known proteins; some species, or the exact
+  species of a group, may not be represented.
+- NCBI databases are updated continuously, so repeating the search later may give
+  slightly different hits; the saved XML preserves the results used here.
+- % identity and query cover are taken from the best-scoring local alignment (HSP)
+  of each hit.
+- The *E. coli* outgroup protein (1,342 aa) is longer than the ingroup proteins
+  (1,162–1,204 aa) because of lineage-specific insertions, which will appear as
+  gaps in the alignment.
+
+ ## Step 6: Multiple sequence alignment (MSA) of the representative, reference and outgroup proteins
+
+In this step, the reference sequences and outgroup from [Step 5](#step-5-blastp-searches-and-reference-selection)
+are combined with the representative translated ORFs found in
+[Step 4](#step-4-orf-prediction-and-translation-python). This MSA will be used to
+create a tree to resolve the phylogenetic relationships between these bacteria.
+
+The step has two parts: preparing the sequences in Python, then aligning them
+with Clustal Omega on Blue Pebble.
+
+### Part 1: preparing the sequences (Python)
+
+**Script:** `scripts/06_prepare_tree_input.py`
+**Input:** `results/selected_references.csv`, `results/representative_proteins.fasta`
+**Output:**
+- `results/references_raw.fasta`: reference and outgroup proteins downloaded from NCBI
+- `results/tree_input_proteins.fasta`: all 26 sequences with tree labels
+- `results/tree_labels.csv`: each label with its group, accession, species and role
+
+```bash
+python scripts/06_prepare_tree_input.py
+```
+
+**What it does**
+1. Reads the 20 references and the outgroup from `results/selected_references.csv`.
+2. Downloads their protein sequences from NCBI by accession, using Biopython's
+   `Entrez.efetch`. The download is saved, so it is not repeated if the script is
+   run again.
+3. Labels every sequence for the tree:
+   - references: `Genus_species_accession` (e.g. `Staphylococcus_aureus_YP_499096`)
+   - outgroup: `OUTGROUP_Escherichia_coli_NP_418414`
+   - representatives: `GROUP<n>_outlet<nn>_seq<nnn>` (e.g. `GROUP5_outlet01_seq068`)
+4. Combines the 20 references, the outgroup and the 5 representative proteins
+   into one FASTA file (26 sequences).
+
+**Result:** all 21 accessions were downloaded. Each representative protein is
+the same length as the RpoB of its BLAST-matched genus (e.g. group 1 and the
+*Bifidobacterium* references: 1,187–1,188 aa; group 5 and the *Staphylococcus*
+references: 1,183 aa), consistent with complete ORF predictions in Step 4. The
+*E. coli* outgroup protein is longer (1,342 aa).
+
+### Part 2: alignment with Clustal Omega (Blue Pebble)
+
+**Script:** `scripts/06_align_proteins_clustalo.sh` (Slurm job script)
+**Input:** `results/tree_input_proteins.fasta`
+**Output:** `results/tree_proteins_aligned.fasta`, `results/slurm-<jobID>.out`
+
+> [!NOTE]
+> **Not a University of Bristol user?** The alignment is included as
+> `results/tree_proteins_aligned.fasta`, so this part can be skipped. To repeat
+> it, run Clustal Omega locally:
+> ```bash
+> clustalo -i results/tree_input_proteins.fasta -o results/tree_proteins_aligned.fasta --seqtype=Protein --outfmt=fasta
+> ```
+
+The job requests 1 node, 1 task, 1000 MB memory and up to 1 hour on the
+`teach_cpu` partition, loads `clustal-omega/1.2.4-skoy`, and runs:
+
+```bash
+clustalo -i ~/job_data/tree_input_proteins.fasta -o ~/job_data/tree_proteins_aligned.fasta --seqtype=Protein --outfmt=fasta --force
+```
+
+All other Clustal Omega settings were left at their defaults.
+
+**Manual steps** (Git Bash on a computer on the university network or VPN).
+Replace `<username>` with your University of Bristol username and `<jobID>`
+with the job number printed by `sbatch`.
+
+```bash
+# from the repository root: stage the input files
+mkdir job_data
+cp results/tree_input_proteins.fasta scripts/06_align_proteins_clustalo.sh job_data/
+scp -r job_data <username>@bp1-login.acrc.bris.ac.uk:
+
+# log in to Blue Pebble and submit the job
+ssh <username>@bp1-login.acrc.bris.ac.uk
+sbatch job_data/06_align_proteins_clustalo.sh
+squeue --me                                        # job leaves the queue when finished
+grep -c ">" job_data/tree_proteins_aligned.fasta   # check: 26
+exit
+
+# back on the local computer: retrieve the results
+scp <username>@bp1-login.acrc.bris.ac.uk:job_data/tree_proteins_aligned.fasta results/
+scp <username>@bp1-login.acrc.bris.ac.uk:slurm-<jobID>.out results/
+rm -r job_data
+```
+
+The job (ID [jobID]) ran on [node] on [date]. The alignment contains all 26
+sequences and is [length] columns long.
+
+### Rationale
+
+| Decision | Why |
+|---|---|
+| Proteins aligned, rather than DNA | Protein sequences change more slowly than DNA and are less affected by saturation and GC-content differences, which matters here because the groups come from two phyla with very different GC content |
+| References downloaded with a script (`Entrez.efetch`) | The sequences used are exactly those listed in `selected_references.csv`, and the download can be repeated |
+| Short labels with only letters, numbers and underscores | Spaces and symbols can be altered or rejected by alignment and tree software; the labels still give the species and accession, as required for informative tip labels |
+| Representatives labelled in capitals with their outlet | Makes them easy to distinguish from the references in the tree, and links each one to its food outlet |
+| Clustal Omega on Blue Pebble | The same tool and workflow as the DNA alignment in Step 2a and the course practicals; fast and accurate for this number of protein sequences |
+| `--seqtype=Protein` | Ensures the sequences are treated as amino acids |
+
+### Limitations
+- The *E. coli* outgroup has regions not present in the Gram-positive proteins,
+  so the alignment contains gaps at these positions in all ingroup sequences.
+- The alignment was not trimmed or manually edited; poorly aligned regions, if
+  any, are included in the phylogenetic analysis.

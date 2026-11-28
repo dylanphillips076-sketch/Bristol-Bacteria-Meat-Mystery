@@ -1,0 +1,22 @@
+group,accession,species,role,reason
+group1,WP_013582405,Bifidobacterium longum,closest match,Top named hit (100% identity); proposed identity of group 1
+group1,WP_214375740,Bifidobacterium colobi,close relative,Next closest Bifidobacterium species (98.32%)
+group1,WP_109057883,Bifidobacterium callitrichidarum,mid relative,Same genus at intermediate similarity (97.98%)
+group1,WP_003827094,Bifidobacterium angulatum,distant relative,More distant Bifidobacterium species (94.98%) for breadth
+group2,WP_033609627,Lactiplantibacillus paraplantarum,closest match,Top named hit (99.83% identity); L. plantarum group
+group2,WP_318766831,Lactiplantibacillus carotarum,close relative,Next closest Lactiplantibacillus species (97.01%)
+group2,WP_082621231,Lactiplantibacillus fabifermentans,mid relative,Same genus at intermediate similarity (96.35%)
+group2,WP_105450084,Lactiplantibacillus kimchii,distant relative,More distant Lactiplantibacillus species (95.92%) for breadth
+group3,WP_184169854,Micrococcus endophyticus,closest match,Top named hit (97.60% identity)
+group3,WP_135028799,Micrococcus flavus,close relative,Another Micrococcus species (96.15%)
+group3,WP_067188465,Micrococcus lylae,mid relative,Same genus at lower similarity (94.18%)
+group3,WP_115931902,Citricoccus muralis,different genus,Closest other genus (90.54%) for taxonomic breadth
+group4,WP_193116781,Brachybacterium tyrofermentans,closest match,Top named hit (95.18% identity)
+group4,WP_096798595,Brachybacterium ginsengisoli,close relative,Similarly close Brachybacterium species (95.09%)
+group4,WP_089064432,Brachybacterium avium,mid relative,Same genus at lower similarity (94.15%)
+group4,WP_010532541,Brachybacterium squillarum,distant relative,More distant Brachybacterium species (92.86%) for breadth
+group5,YP_499096,Staphylococcus aureus subsp. aureus NCTC 8325,closest match,Top hit (100% identity); S. aureus reference strain
+group5,WP_000918683,Staphylococcus argenteus,close relative,S. aureus complex member (99.66%)
+group5,WP_047428292,Staphylococcus schweitzeri,close relative,S. aureus complex member (99.58%)
+group5,WP_115313952,Staphylococcus saccharolyticus,distant relative,More distant Staphylococcus species (96.87%) for breadth
+outgroup,NP_418414.1,Escherichia coli str. K-12 substr. MG1655,outgroup,Gram-negative (Pseudomonadota); outside both Actinomycetota and Bacillota - CHECK ACCESSION ON NCBI
